@@ -1,4 +1,10 @@
 TODO 05-08-2010
+- create git branches (git checkout -b newbranch)
+  * master, original, this will be synched with git://git.sr71.net/gmailfs.git
+  * cpython, minor alteration from git clone git://git.sr71.net/gmailfs.git
+  * stackless, redo system threads using green threads
+  * jit, like the cpython branch but with specific import alterations to allow use of imaplib and fuse wrapper
+  * dokan, cpython branch but instead of fuse, dokan, for windows only
 - refactor to seperate gmail behaviour policy; basic imap to fuse translation
   * define policy code
   * define baseline behaviour code
