@@ -1,0 +1,20 @@
+TODO 05-08-2010
+- refactor to seperate gmail behaviour policy; basic imap to fuse translation
+  * define policy code
+  * define baseline behaviour code
+- refactor original code in cpython; submit to owner
+  - add decorators
+  - add generators if need be
+  - reduce reliance on system threads
+  - more test code using decorators
+  - write native python code
+- refactor to pypy code (with jit)
+  - import imaplib (pure cpython)
+  - import pyfuse (cpython wrapper for C lib)
+  - probably need to rewrite system threads
+- speed test (pypy-jit vs. cpython)
+- refactor to pypy-stackless code
+  - remove threads, introduce green threads
+  - refactor to asynch sockets using green threads (possible?)
+- write sikuli script to create test accounts on gmail
+  

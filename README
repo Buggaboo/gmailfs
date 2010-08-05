@@ -1,0 +1,12 @@
+README 05-08-2010
+
+
+Scratching an itch again. Primary goal: port gmailfs to pypy-stackless 
+and hoping to import imaplib (pure python lib) and pyfuse (python 
+wrapper around C lib). Leverage green threads for escaping locks. 
+Secondary goal: port to dokan library in windows. Write tests, write a 
+lot of tests. Write tests for cpython variant with threads, 
+pypy-stackless, pypy-jit.
+
+Since I'm going to use pypy; no generators allowed for iterator object 
+creation, I hope I can keep decorators.
