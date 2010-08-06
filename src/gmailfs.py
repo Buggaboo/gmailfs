@@ -60,6 +60,7 @@ GmailFS provides a filesystem using a Google Gmail account as its storage medium
 #@+node:imports
 
 # TODO - add os check here to detect whether dokan usage or not
+# TODO - reduce dependency on globals
 
 import pprint
 import fuse
@@ -587,6 +588,10 @@ class testthread(Thread):
 			#rint("writeout ret: '%s'" % (ret))
 			if ret == 0:
 				writeout_threads[thread.get_ident()] = "idle"
+                                """
+                                WARNING: strings in python are immutable, concatenations like
+                                    this are quadratic in memory usage.
+                                """
 				#msg = "["
 				#for t in range(self.fs.nr_imap_threads):
 					#if t >= 1:
@@ -647,11 +652,11 @@ class testthread(Thread):
 class reference_class:
     def __init__(self,fsname,username=None,password=None):
       self.fsname = fsname
-      if username is None or username == '':
+      if not username: # NOTE: username is None or username == '' is equivalent not username ; empty strings boolean evaluated are false and None is also false.
           self.username = DefaultUsername
       else:
           self.username = username
-      if password is None or password == '':
+      if not password: # NOTE: see 'not username' password is None or password == '':
           self.password = DefaultPassword
       else:
           self.password = password
@@ -684,11 +689,11 @@ def _getMsguidsByQuery(about, imap, queries, or_query = 0):
     # Don't put any extra space in it anywhere, or you
     # will be sorry
     #  53:12.12 > MGLK6 SEARCH (SUBJECT "foo=bar" SUBJECT "bar=__fo__o__")
-    queryString  = '(SUBJECT "%s"' % (fsq)
+    queryString_first  = '(SUBJECT "%s"' % (fsq)
     last_q = queries.pop()
 #    for q in queries:
 #    	queryString += or_str + ' SUBJECT "%s"' % (q) # major string optimization
-    queryString_arr = [ '%s SUBJECT "%s"' % (or_str,q) for q in queries ]
+    queryString_arr = [queryString_first] + [ '%s SUBJECT "%s"' % (or_str,q) for q in queries ]
 #    queryString += ' SUBJECT "%s")' % last_q # major string optimization
     queryString_arr += [' SUBJECT "%s")' % last_q]
     queryString = ''.join(queryString_arr) # concatenate string in linear time, instead of quadratic like before
@@ -1088,7 +1093,7 @@ class GmailInode(Dirtyable):
         timeString = str(self.mtime)
 	bsize = str(DefaultBlockSize)
 	symlink_str = ""
-	if self.symlink_tgt != None:
+	if self.symlink_tgt: # self.symlink_tgt != None:
 		symlink_str = _pathSeparatorEncode(self.symlink_tgt)
         #body = (ModeTag  + "=" + str(self.mode)   + " " +
 	        #UidTag   + "=" + str(os.getuid()) + " " +
