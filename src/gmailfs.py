@@ -1189,7 +1189,7 @@ class GmailInode(Dirtyable):
 	                BSizeTag,
 			SymlinkTag + "=" + LinkStartDelim  + '(.*)' + LinkEndDelim])
 
-        log_debug2("restr: ->%s<-" % (restr))
+        log_debug2("restr: ->%s<-" % restr)
 	m = re.search(re.compile(restr, re.DOTALL), body)
 	self.mode  = int(m.group(1))
         self.uid   = int(m.group(2))
