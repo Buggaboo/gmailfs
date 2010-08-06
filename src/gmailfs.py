@@ -183,6 +183,7 @@ def semget(sem):
 	sem_msg[sem] = "acquired semget"
 	return "OK"
 
+# TODO - remove return statements, not necessary (test?)
 def log_error(str):
 	log.debug(str)
 	log.error(str)
@@ -312,10 +313,11 @@ def imap_times_print(force=0):
 #
 # This hopefully just means that one of the connections
 # died.  This will try to reestablish it.
+# TODO - replace arg1 etc. with **arg or *arg
 def imap_uid(imap, cmd, arg1, arg2 = None, arg3 = None, arg4 = None):
 	tries = 3
 	ret = None
-	while ret == None:
+	while not ret: # previously ret == None, this change is more pythonic
 		tries = tries - 1
 		try:
 		        ret = imap.uid(cmd, arg1, arg2, arg3)
@@ -372,12 +374,17 @@ def imap_getquotaroot(imap, fsNameVar):
 # returns a dictionary of results indexed by uid
 #
 # does python have a ... operator like c preprocessor?
+# Jasm: No, python has no macros, ifdef, include (import), etc.,
+# Jasm: I don't understand why you would need those.
+#
+# TODO - replace arg1 etc. with **arg or *arg
 def uid_cmd(imap, cmd, uids, arg1, arg2 = None, arg3 = None):
 	semget(imap.lock)
 	ret = __uid_cmd(imap, cmd, uids, arg1, arg2, arg3)
 	imap.lock.release()
 	return ret
 
+# TODO - replace arg1 etc. with **arg or *arg
 def __uid_cmd(imap, cmd, uids, arg1, arg2 = None, arg3 = None):
 	uids_str = string.join(uids, ",")
 	start = time.time()
