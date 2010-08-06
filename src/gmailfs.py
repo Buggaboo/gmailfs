@@ -59,6 +59,8 @@ GmailFS provides a filesystem using a Google Gmail account as its storage medium
 #@+others
 #@+node:imports
 
+# TODO - add os check here to detect whether dokan usage or not
+
 import pprint
 import fuse
 import imaplib
@@ -272,7 +274,7 @@ def mkmsg(subject, preamble, attach = ""):
 	global username
 	global fsNameVar
 	msg = MIMEMultipart()
-	log_debug2("mkmsg('%s', '%s', '%s', '%s',...)" % (username, fsNameVar, subject, preamble))
+	log_debug2("mkmsg('%s', '%s', '%s', '%s',...)" % (username, fsNameVar, subject, preamble)) # TODO - replace with tuple(*args)
 	msg['Subject'] = subject
 	msg['To'] = username
 	msg['From'] = username
@@ -585,17 +587,39 @@ class testthread(Thread):
 			#rint("writeout ret: '%s'" % (ret))
 			if ret == 0:
 				writeout_threads[thread.get_ident()] = "idle"
-				msg = "["
-				for t in range(self.fs.nr_imap_threads):
-					if t >= 1:
-						msg += " "
-					if writeout_threads[thread.get_ident()] == "idle":
-						msg += str(t)
-					else:
-						msg += " "
-				msg += "] idle\r"
+				#msg = "["
+				#for t in range(self.fs.nr_imap_threads):
+					#if t >= 1:
+						#msg += " "
+					#if writeout_threads[thread.get_ident()] == "idle":
+						#msg += str(t)
+					#else:
+						#msg += " "
+				#msg += "] idle\r"
+                                msg_arr = []
+                                for t in range(self.fs.nr_imap_threads):
+                                    if t>=1:
+                                        msg_arr.append(' ')
+                                    if writeout_threads[thread.get_ident()] == "idle":
+                                        msg_arr.append(str(t))
+                                    else:
+                                        msg_arr.append(' ')
+                                msg = ''.join(["["] + msg_arr + ["] idle\r"])
+
 				sys.stderr.write(msg)
 				sys.stderr.flush()
+                                """TODO - test seperately
+                                alternative implementation of string concatenation (again):
+                                            msg_arr = []
+                                            for t in range(self.fs.nr_imap_threads):
+                                                if t>=1:
+                                                    msg_arr.append(' ')
+                                                if writeout_threads[thread.get_ident()] == "idle":
+                                                    msg_arr.append(str(t))
+                                                else:
+                                                    msg_arr.append(' ')
+                                            msg = ''.join(["["] + msg_arr + ["] idle\r"])
+                                """
 			if ret >= 0:
 				break
 			# this will happen when there are
@@ -655,16 +679,19 @@ def _getMsguidsByQuery(about, imap, queries, or_query = 0):
     or_str = ""
     if or_query:
 	or_str = " OR"
-    fsq = (str(FsNameTag + "=" + MagicStartDelim + fsNameVar + MagicEndDelim))
+    fsq = ''.join([FsNameTag , "=" , MagicStartDelim , fsNameVar , MagicEndDelim])
     # this is *REALLY* sensitive, at least on gmail
     # Don't put any extra space in it anywhere, or you
     # will be sorry
     #  53:12.12 > MGLK6 SEARCH (SUBJECT "foo=bar" SUBJECT "bar=__fo__o__")
     queryString  = '(SUBJECT "%s"' % (fsq)
     last_q = queries.pop()
-    for q in queries:
-    	queryString += or_str + ' SUBJECT "%s"' % (q)
-    queryString += ' SUBJECT "%s")' % last_q
+#    for q in queries:
+#    	queryString += or_str + ' SUBJECT "%s"' % (q) # major string optimization
+    queryString_arr = [ '%s SUBJECT "%s"' % (or_str,q) for q in queries ]
+#    queryString += ' SUBJECT "%s")' % last_q # major string optimization
+    queryString_arr += [' SUBJECT "%s")' % last_q]
+    queryString = ''.join(queryString_arr) # concatenate string in linear time, instead of quadratic like before
 
     global rsp_cache
     global rsp_cache_hits
@@ -1043,31 +1070,49 @@ class GmailInode(Dirtyable):
 
     def mk_inode_msg(self):
    	dev = "11"
-        subject = (InodeSubjectPrefix+ " " +
-	    	   VersionTag     + "=" + GMAILFS_VERSION+ " " +
-                   InodeTag       + "=" + str(self.ino)+ " " +
-	           DevTag         + "=" + dev + " " +
-		   NumberLinksTag + "=" + str(self.i_nlink)+ " " +
-		   FsNameTag      + "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
-		   "")
+        #subject = (InodeSubjectPrefix+ " " +
+	    	   #VersionTag     + "=" + GMAILFS_VERSION+ " " +
+                   #InodeTag       + "=" + str(self.ino)+ " " +
+	           #DevTag         + "=" + dev + " " +
+		   #NumberLinksTag + "=" + str(self.i_nlink)+ " " +
+		   #FsNameTag      + "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
+		   #"")
+        # linear time string concatenation, I have no idea if this is worth it... what the hey
+        subject = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+                    InodeSubjectPrefix, " " ,
+	    	    VersionTag     , "=" , GMAILFS_VERSION, " " ,
+                    InodeTag       , "=" , str(self.ino), " " ,
+	            DevTag         , "=" , dev , " " ,
+		    NumberLinksTag , "=" , str(self.i_nlink), " " ,
+		    FsNameTag      , "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
         timeString = str(self.mtime)
 	bsize = str(DefaultBlockSize)
 	symlink_str = ""
 	if self.symlink_tgt != None:
 		symlink_str = _pathSeparatorEncode(self.symlink_tgt)
-        body = (ModeTag  + "=" + str(self.mode)   + " " +
-	        UidTag   + "=" + str(os.getuid()) + " " +
-		GidTag   + "=" + str(os.getgid()) + " " +
-		SizeTag  + "=" + str(self.size)   + " " +
-		AtimeTag + "=" + timeString 	  + " " +
-		MtimeTag + "=" + timeString 	  + " " +
-		CtimeTag + "=" + timeString 	  + " " +
-		BSizeTag + "=" + bsize            + " " +
-		SymlinkTag+"=" + LinkStartDelim  + symlink_str + LinkEndDelim +
-		"")
+        #body = (ModeTag  + "=" + str(self.mode)   + " " +
+	        #UidTag   + "=" + str(os.getuid()) + " " +
+		#GidTag   + "=" + str(os.getgid()) + " " +
+		#SizeTag  + "=" + str(self.size)   + " " +
+		#AtimeTag + "=" + timeString 	  + " " +
+		#MtimeTag + "=" + timeString 	  + " " +
+		#CtimeTag + "=" + timeString 	  + " " +
+		#BSizeTag + "=" + bsize            + " " +
+		#SymlinkTag+"=" + LinkStartDelim  + symlink_str + LinkEndDelim +
+		#"")
+        body = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+                ModeTag  , "=" , str(self.mode)   , " " ,
+	        UidTag   , "=" , str(os.getuid()) , " " ,
+		GidTag   , "=" , str(os.getgid()) , " " ,
+		SizeTag  , "=" , str(self.size)   , " " ,
+		AtimeTag , "=" , timeString 	  , " " ,
+		MtimeTag , "=" , timeString 	  , " " ,
+		CtimeTag , "=" , timeString 	  , " " ,
+		BSizeTag , "=" , bsize            , " " ,
+		SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
 	return mkmsg(subject, body)
 
-#yy		  SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
+#		  SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
 #		ret[LinkToTag]   =     m.group(4)
 #	link_to  = src_msg_hash[LinkToTag]
     def dec_nlink(self):
@@ -1105,15 +1150,37 @@ class GmailInode(Dirtyable):
         self.i_nlink =   subj_hash[NumberLinksTag]
         #quotedEquals = "=(?:3D)?(.*)"
         quotedEquals = "=(.*)"
-	restr = (	  ModeTag  + quotedEquals + ' ' +
-			  UidTag   + quotedEquals + ' ' +
-	  		  GidTag   + quotedEquals + ' ' +
-	                  SizeTag  + quotedEquals + ' ' +
-			  AtimeTag + quotedEquals + ' ' +
-			  MtimeTag + quotedEquals + ' ' +
-	                  CtimeTag + quotedEquals + ' ' +
-	                  BSizeTag + quotedEquals + ' ' +
-			  SymlinkTag + "=" + LinkStartDelim  + '(.*)' + LinkEndDelim)
+	#restr = (	  ModeTag  + quotedEquals + ' ' +
+			  #UidTag   + quotedEquals + ' ' +
+	  		  #GidTag   + quotedEquals + ' ' +
+	                  #SizeTag  + quotedEquals + ' ' +
+			  #AtimeTag + quotedEquals + ' ' +
+			  #MtimeTag + quotedEquals + ' ' +
+	                  #CtimeTag + quotedEquals + ' ' +
+	                  #BSizeTag + quotedEquals + ' ' +
+			  #SymlinkTag + "=" + LinkStartDelim  + '(.*)' + LinkEndDelim)
+	#restr = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+                        #ModeTag  , quotedEquals , ' ' ,
+			#UidTag   , quotedEquals , ' ' ,
+	  		#GidTag   , quotedEquals , ' ' ,
+	                #SizeTag  , quotedEquals , ' ' ,
+			#AtimeTag , quotedEquals , ' ' ,
+			#MtimeTag , quotedEquals , ' ' ,
+	                #CtimeTag , quotedEquals , ' ' ,
+	                #BSizeTag , quotedEquals , ' ' ,
+			#SymlinkTag , "=" , LinkStartDelim  , '(.*)' , LinkEndDelim])
+                        
+	restr = ((quotedEquals+' ').join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+                        ModeTag,
+			UidTag,
+	  		GidTag,
+	                SizeTag,
+			AtimeTag,
+			MtimeTag,
+	                CtimeTag,
+	                BSizeTag,
+			SymlinkTag + "=" + LinkStartDelim  + '(.*)' + LinkEndDelim])
+
         log_debug2("restr: ->%s<-" % (restr))
 	m = re.search(re.compile(restr, re.DOTALL), body)
 	self.mode  = int(m.group(1))
@@ -1317,7 +1384,7 @@ class GmailBlock(Dirtyable):
 
         arr = array.array('c')
         arr.fromlist(buf)
-	log_debug("wrote contents to tmp file: ->"+arr.tostring()+"<-")
+	log_debug("wrote contents to tmp file: ->"+arr.tostring()+"<-") # TODO @ remove tostring, with pythonesque "def __str__" of the object => o crap, this is native code
 
 	tmpf.write(arr.tostring())
 	tmpf.flush()
@@ -1450,6 +1517,9 @@ class Gmailfs(Fuse):
 
     #@+node:__init__
     def __init__(self, extraOpts, mountpoint, *args, **kw):
+        """
+        TODO - refactor this to smaller functions
+        """
         Fuse.__init__(self, *args, **kw)
 
     	self.nr_imap_threads = 4
@@ -2417,6 +2487,7 @@ except:
     pass
 
 def main(mountpoint, namedOptions):
+    # TODO - use optparse or pyopt
     log_debug1("Gmailfs: starting up, pid: %d" % (os.getpid()))
     global lead_thread
     lead_thread = thread.get_ident()

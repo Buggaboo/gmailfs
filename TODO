@@ -1,4 +1,10 @@
 TODO 05-08-2010
+- possible conflict, regexp in imaplib and gmailfs, probably not supported in pypy
+  - seek regexp alternative, for pypy
++ remove quadratic string concatenation in cpython branch
+- range to xrange
+  - test speed vs. memory
+- redo logging functions to reflect python way with decorators and * and **
 + create git branches (git checkout -b newbranch)
   + master, original, this will be synched with git://git.sr71.net/gmailfs.git
   + cpython, minor alteration from git clone git://git.sr71.net/gmailfs.git
