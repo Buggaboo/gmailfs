@@ -324,7 +324,8 @@ def imap_uid(imap, cmd, arg1, arg2 = None, arg3 = None, arg4 = None):
 		tries = tries - 1
 		try:
 		        ret = imap.uid(cmd, arg1, arg2, arg3)
-		except Exception as e:
+		#except Exception as e:
+                except Exception, e: # new >2.* syntax
 			log_error("imap.uid() error: %s (tries left: %d)" % (str(e), tries))
 			imap.fs.kick_imap(imap)
 			if tries <= 0:
@@ -349,7 +350,8 @@ def __imap_append(imap, fsNameVar, flags, now, msg):
 				time.sleep(1)
 				rsp = None
 				continue
-		except RuntimeError as e:
+#		except RuntimeError as e:
+                except RuntimeError, e: # new >2.* syntax
 			log_error("imap.append() error: %s" % (str(e)))
 			imap.fs.kick_imap(imap)
 			if tries <= 0:
@@ -362,7 +364,8 @@ def imap_getquotaroot(imap, fsNameVar):
 	while ret == None:
 		try:
 		        ret = imap.getquotaroot(fsNameVar)
-		except RuntimeError as e:
+#		except RuntimeError as e:
+                except RuntimeError, e:  # new >2.* syntax
 			log_error("imap.getquotaroot() error: %s" % (str(e)))
 			imap.fs.kick_imap(imap)
 			if tries <= 0:
