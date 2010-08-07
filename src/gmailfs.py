@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: iso-8859-1 -*-
 #@+leo-ver=4
 #@+node:@file gmailfs.py
