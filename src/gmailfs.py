@@ -6,6 +6,7 @@
 #
 #    Copyright (C) 2004  Richard Jones  <richard followed by funny at sign then jones then a dot then name>
 #    Copyright (C) 2010  Dave Hansen <dave@sr71.net>
+#    Copyleft  (C) 2010  Jasm Sison <just add a dot somewhere inbetween and the previously mentioned funny sign suffixed with google's e-mail service dot com>
 #
 #    GmailFS - Gmail Filesystem Version 0.8.6
 #    This program can be distributed under the terms of the GNU GPL.
