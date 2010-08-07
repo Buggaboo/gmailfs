@@ -63,6 +63,7 @@ GmailFS provides a filesystem using a Google Gmail account as its storage medium
 
 # TODO - add os check here to detect whether dokan usage or not
 # TODO - reduce dependency on globals
+# TODO - add python version check, to prevent bad syntax
 
 import pprint
 import fuse
