@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: iso-8859-1 -*-
 #@+leo-ver=4
 #@+node:@file gmailfs.py
 #@@first
@@ -88,11 +89,12 @@ fuse.fuse_python_api = (0, 2)
 
 import thread
 import quopri
-try:
-    from lgconstants import *
-except ImportError, e:
-    print "You need to have the original libgmail library."
-    print e
+# TODO - remove following lgconstants import, useless import since move to IMAP protocol
+#try:
+#    from lgconstants import *
+#except ImportError, e:
+#    print "You need to have the original libgmail library?"
+#    print e
 
 import sys,traceback,re,string,time,tempfile,array,logging,logging.handlers
 
@@ -160,7 +162,7 @@ rsp_cache_hits = 0
 rsp_cache_misses = 0
 rsp_cache = {}
 
-debug = 1
+debug = 3
 if debug >= 3:
     imaplib.Debug = 3
 #imaplib.Debug = 4
@@ -189,6 +191,24 @@ def semget(sem):
         print("[%d] unhung on lock after %d seconds (last holder: %s)" % (thread.get_ident(), tries, sem_msg[sem]))
     sem_msg[sem] = "acquired semget"
     return "OK"
+
+def logger(f, name=None):
+    # if logger.fhwr isn't defined and open ...
+    try:
+       if logger.fhwr:
+          pass
+    except:
+       # ... open it
+       logger.fhwr = open("log.txt","w")
+    if name is None:
+        name = f.func_name
+    def wrapped(*args, **kwargs):
+        logger.write("***"+name+" "+str(f)+"\n"\
+                +str(args)+str(kwargs)+"\n\n")
+        result = f(*args, **kwargs)
+        return result
+    wrapped.__doc__ = f.__doc__
+    return wrapped
 
 # TODO - remove return statements, not necessary (test?)
 def log_error(str):
@@ -710,7 +730,7 @@ def _getMsguidsByQuery(about, imap, queries, or_query = 0):
         resp, msgids_list = imap_uid(imap, "SEARCH", None, queryString)
     except:
         log_error("IMAP error on SEARCH")
-        log_error("queryString: ->%s<-" % (queryString))
+        log_error("queryString: ->%s<-" % queryString)
         print "\nIMAP exception ", sys.exc_info()[0]
         exit(-1)
     finally:
@@ -866,6 +886,12 @@ class Dirtyable(object):
         self.writeout_lock = thread.allocate_lock()
         sem_msg[self.writeout_lock] = "brand spankin new"
 
+    # NOTE: deprecated
+    #def to_str(self):
+        #return "Dirtyable.to_str()"
+    def __str__(self):
+        return "Dirtyable"
+
     def dirty(self):
             return self.dirty_reasons.qsize()
 
@@ -892,12 +918,9 @@ class Dirtyable(object):
             self.dirty_mark.put_nowait(desc);
             self.fs.dirty_objects.put(self)
         except:
-            log_debug("mark_dirty('%s') skipped global list, already dirty" % (self.to_str()))
-        log_debug1("mark_dirty('%s') because '%s' (%d reasons)" %
-                (self.to_str(), desc, self.dirty_reasons.qsize()))
-
-    def to_str(self):
-        return "Dirtyable.to_str()"
+            log_debug("mark_dirty('%s') skipped global list, already dirty" % str(self))
+        log_debug1("mark_dirty('%s') because '%s' (%d reasons)" % \
+          (str(self), desc, self.dirty_reasons.qsize()))
 # end class Dirtyable
 
 #@+node:class GmailDirent
@@ -985,34 +1008,34 @@ class GmailInode(Dirtyable):
     #@+node:__init__
     def __init__(self, inode_msg, fs):
         Dirtyable.__init__(self)
-    # We can either make this inode from scratch, or
-    # use the inode_msg to fill in all these fields
-    self.fs = fs
-    self.xattr = {}
-    self.i_blocks = {}
-    self.inode_cache_lock = thread.allocate_lock()
-    # protected by fs.inode_cache_lock
-    self.pinned = 0
-    if inode_msg != None:
-        self.inode_msg = inode_msg
-        self.fill_from_inode_msg()
-    else:
-        self.version = 2
-        self.ino = get_ino()
-        self.mode = 0
-        self.dev = 0
-        self.i_nlink = 0
-        self.uid = 0
-        self.gid = 0
-        self.size = 0
-        self.atime = 0
-        self.mtime = 0
-        self.ctime = 0
-        self.symlink_tgt = ""
-        self.block_size = DefaultBlockSize
-        # there are a couple of spots that depend
-        # on having one of these around
-        self.inode_msg = self.mk_inode_msg()
+        # We can either make this inode from scratch, or
+        # use the inode_msg to fill in all these fields
+        self.fs = fs
+        self.xattr = {}
+        self.i_blocks = {}
+        self.inode_cache_lock = thread.allocate_lock()
+        # protected by fs.inode_cache_lock
+        self.pinned = 0
+        if inode_msg != None:
+            self.inode_msg = inode_msg
+            self.fill_from_inode_msg()
+        else:
+            self.version = 2
+            self.ino = get_ino()
+            self.mode = 0
+            self.dev = 0
+            self.i_nlink = 0
+            self.uid = 0
+            self.gid = 0
+            self.size = 0
+            self.atime = 0
+            self.mtime = 0
+            self.ctime = 0
+            self.symlink_tgt = ""
+            self.block_size = DefaultBlockSize
+            # there are a couple of spots that depend
+            # on having one of these around
+            self.inode_msg = self.mk_inode_msg()
     #@-node:__init__
     def to_str(self):
         return "inode(%s)" % (str(self.ino))
@@ -1077,12 +1100,12 @@ class GmailInode(Dirtyable):
            #"")
         # linear time string concatenation, I have no idea if this is worth it... what the hey
         subject = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
-                    InodeSubjectPrefix, " " ,
+                InodeSubjectPrefix, " " ,
                 VersionTag     , "=" , GMAILFS_VERSION, " " ,
-                    InodeTag       , "=" , str(self.ino), " " ,
+                InodeTag       , "=" , str(self.ino), " " ,
                 DevTag         , "=" , dev , " " ,
-            NumberLinksTag , "=" , str(self.i_nlink), " " ,
-            FsNameTag      , "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
+                NumberLinksTag , "=" , str(self.i_nlink), " " ,
+                FsNameTag      , "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
         timeString = str(self.mtime)
         bsize = str(DefaultBlockSize)
         symlink_str = ""
@@ -1099,15 +1122,15 @@ class GmailInode(Dirtyable):
             #SymlinkTag+"=" + LinkStartDelim  + symlink_str + LinkEndDelim +
             #"")
             body = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
-                    ModeTag  , "=" , str(self.mode)   , " " ,
+                ModeTag  , "=" , str(self.mode)   , " " ,
                 UidTag   , "=" , str(os.getuid()) , " " ,
-            GidTag   , "=" , str(os.getgid()) , " " ,
-            SizeTag  , "=" , str(self.size)   , " " ,
-            AtimeTag , "=" , timeString       , " " ,
-            MtimeTag , "=" , timeString       , " " ,
-            CtimeTag , "=" , timeString       , " " ,
-            BSizeTag , "=" , bsize            , " " ,
-            SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
+                GidTag   , "=" , str(os.getgid()) , " " ,
+                SizeTag  , "=" , str(self.size)   , " " ,
+                AtimeTag , "=" , timeString       , " " ,
+                MtimeTag , "=" , timeString       , " " ,
+                CtimeTag , "=" , timeString       , " " ,
+                BSizeTag , "=" , bsize            , " " ,
+                SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
         return mkmsg(subject, body)
 
 #          SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
@@ -1289,8 +1312,12 @@ class GmailBlock(Dirtyable):
         log_debug1("created new block: %d" % (self.block_nr))
         gmail_blocks[self] = self
 
-    def to_str(self):
-        return "block(%d)" % (self.block_nr)
+# TODO - deprecated, so remove, also calls to the function as well
+#    def to_str(self):
+#        return "block(%d)" % (self.block_nr)
+
+    def __str__(self):
+        return "block(%d)" % self.block_nr
 
     def covers(self, off, len):
         # does this block cover the specified buffer?
@@ -1482,7 +1509,7 @@ class Gmailfs(Fuse):
         fsNameVar = DefaultFsname
         password = DefaultPassword
         username = DefaultUsername
-        if imap == None:
+        if not imap: # imap == None:
             imap = imaplib.IMAP4_SSL("imap.gmail.com", 993)
             imap.fs = self
             imap.lock = threading.Semaphore(1)
@@ -1490,7 +1517,7 @@ class Gmailfs(Fuse):
             imap.open("imap.gmail.com", 993) #libgmail.GmailAccount(username, password)
             if username.find("@")<0:
                 username = username+"@gmail.com"
-                imap.login(username, password)
+        imap.login(username, password)
         resp, data = imap.select(fsNameVar)
         log_debug1("folder select '%s' resp: '%s' data: '%s'" % (fsNameVar, resp, data))
         if resp == "NO":
@@ -1509,11 +1536,11 @@ class Gmailfs(Fuse):
         self.imap_pool.put(imap)
 
     #@+node:__init__
-    def __init__(self, extraOpts, mountpoint, *args, **kw):
+    def __init__(self, extraOpts, mountpoint, *args, **kwargs):
         """
         TODO - refactor this to smaller functions
         """
-        Fuse.__init__(self, *args, **kw)
+        Fuse.__init__(self, *args, **kwargs)
 
         self.nr_imap_threads = 4
         self.imap_pool = Queue.Queue(self.nr_imap_threads)
@@ -1594,7 +1621,8 @@ class Gmailfs(Fuse):
         # messages with the given label
         #self.imap.debug = 4
         trash_all = 0
-        if os.environ["IMAPFS_TRASH_ALL"] != None:
+        #if os.environ["IMAPFS_TRASH_ALL"] != None:
+        if "IMAPFS_TRASH_ALL" in os.environ:
             trash_all = 1
         if trash_all:
             print("deleting existing messages...")
@@ -1798,11 +1826,12 @@ class Gmailfs(Fuse):
                 # exception immediately if empty
                 object = self.fs.dirty_objects.get()
                 write_out(object, "flush_dirent_cache()")
-                log_info("flush_dirent_cache() wrote out %s" % (object.to_str()))
+                log_info("flush_dirent_cache() wrote out %s" % object.to_str())
             except:
                 log_info("no more object to flush")
                 break
-        size = self.fs.dirty_objects.qsize()
+#        size = self.fs.dirty_objects.qsize() # WARNING: neither the parent class or current class has a field called 'fs'
+        size = self.dirty_objects.qsize()
         log_info("explicit flush done")
 
     #@+node:unlink
