@@ -70,6 +70,13 @@ import pprint
 
 try:
 	import fuse
+	(major, minor) = fuse.FUSE_PYTHON_API_VERSION
+	if major >= 0 and minor >= 2:
+		print "Version: %d.%d. This fuse python version is supported." % (major, minor)
+	else:
+		print "Version: %d.%d. This fuse python version is NOT supported. Please upgrade to version >= fuse-python 0.2." % (major, minor)
+		import sys
+		sys.exit(1)
 except ImportError, e:
 	print e
 	print "Are you sure fuse is built into the kernel or loaded as a module?"
