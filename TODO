@@ -3,8 +3,12 @@ TODO 10-08-2010
   - FIXME, don't allow directory unlinking...
   - FIXME, using time for ino is a bad idea...
   - FIXME, we should probably make a mkfs command to make the root inode...
+- persuade dave to refactor log_entry with @log_entry decorator
+  - refactor own code
+  - refactor Dave's code
+  - send patch
 - persuade dave to rename functions to lowercase initials where that is not the case
-- send patch to Dave  
+  - send patch
 - eliminate thread deadlock in own implementation
   + investigate whether extra identation in getsem (get semaphore) has anything to do with it
   => no it doesn't, it's related to some nasty behaviour of some global lock, related to a FIXME
@@ -23,7 +27,7 @@ TODO 10-08-2010
 
 MOSCOW
 M
-- refactor threads
+- refactor threads (to what?)
 - add more tests
   - /etc/fuse.conf test for 'user_allow_other'
 - change certain range to xrange (check where used in for loop but not as iterator for values)
