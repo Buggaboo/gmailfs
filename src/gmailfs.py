@@ -888,7 +888,7 @@ class Dirtyable(object):
 		self.writeout_lock = thread.allocate_lock()
 		sem_msg[self.writeout_lock] = "brand spankin new"
 
-	# NOTE: deprecated
+	# NOTE: deprecated for more pythonesque overloaded __str__
 	#def to_str(self):
 		#return "Dirtyable.to_str()"
 	def __str__(self):
