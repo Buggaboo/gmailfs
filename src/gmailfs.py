@@ -2541,6 +2541,10 @@ def main(mountpoint, namedOptions):
 		log_info("done")		
 	except fuse.FuseError, e:
 		print e
+		# TODO - put conditional here, in case 'allow_root' or was entered as a parameter to fuse python
+		# like this:
+		# if 'allow_root' in fuse_args
+		# 	print "Please put "Please put \"user_allow_other\" ...
 		print "Please put \"user_allow_other\" by itself in your /etc/fuse.conf file as root."
 
 
