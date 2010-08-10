@@ -3,6 +3,9 @@ TODO 10-08-2010
   - investigate whether extra identation in getsem (get semaphore) has anything to do with it
   - figure out what dirty forks and clean forks have to do with it,
   - figure out when a thread is through eating (for the moment) :P
+- refactor: when a function is invoked it announces itself with log_entry, refactor this away with a decorator @log_entry
+- when semget is called, the lock must be released, check for consistency
+- refactor idea: think about how semget and release can be refactored to a decorator
 + remove quadratic string concatenation in cpython branch
   - test dave hansen's unoptimized string concatenations vs. my optimized concatenations
 - enumerate useless branches
