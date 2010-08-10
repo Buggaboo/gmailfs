@@ -67,6 +67,13 @@ GmailFS provides a filesystem using a Google Gmail account as its storage medium
 # TODO - do a chmod 600 check on ~/.gmailfs.conf to prevent party password thieves from doing their work
 
 import pprint
+
+try:
+	import fuse
+except ImportError, e:
+	print e
+	print "Are you sure fuse is built into the kernel or loaded as a module?"
+	print "In a linux shell type \"lsmod | grep fuse\" to find out"
 import fuse
 import imaplib
 import email
