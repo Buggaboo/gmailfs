@@ -2,24 +2,40 @@ README 05-08-2010
 
 Scratching an itch again. Primary goal: make gmailfs work on any generic 
 linux (fuse) / windows (dokan) installation on any imap-based host. 
+
 Maybe port gmailfs to pypy-stackless and hoping to import imaplib (pure 
 python lib) and fuse-python (python wrapper around C lib). Leverage 
 green threads for escaping locks. Secondary goal: port to dokan library 
 in windows. Write tests, write a lot of tests. Write tests for cpython 
 variant with threads, pypy-stackless, pypy-jit.
 
-Since I'm going to use pypy; no generators allowed for iterator object 
-creation, I hope I can keep decorators.
+Since I'm going to use pypy; no generators are allowed for iterator 
+object creation, I hope I can keep decorators.
 
 HOWTO
 
 As root:
+> apt-getorwhatevereasy-install python-fuse fuse
 > cat user_allow_other >> /etc/fuse.conf
 
 As normal user:
+> git clone thisrepository
+> cp gmailfs/conf/gmailfs.conf ~/.gmail.conf # add own info
+> chmod 600 ~/.gmail.conf
 > mkdir -p ~/mnt/gmailfs
 > python gmailfs.py -o allow_root -d ~/mnt/gmailfs # -d for debug
 
 Gmailfs requires ext4(?) with extended attributes (xattr) etc. Not sure 
 though, waiting for Dave's e-mail response. It's partially working on my 
 rig, I have reiserfs (aka murderfs) and no extended attributes.
+
+RESULTS
+
+With reiserfs with no extended attributes it works like this:
+
+In the gmail web interface, under the label "linux_fs_4":
+
+* Each file crud (creation, update, delete) results in a new e-mail;
+* The subject of the e-mails have inode stuff (gibberish to me);
+* when the gmailfs mounted files have any content, those are stored as
+"noname" attachments. With the original input.
