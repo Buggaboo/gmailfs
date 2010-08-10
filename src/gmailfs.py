@@ -2516,28 +2516,33 @@ def main(mountpoint, namedOptions):
 		print "am lead thread"
 	else:
 		print "am NOT lead thread"
-	server = Gmailfs(namedOptions,mountpoint,version="gmailfs 6.6.6",usage='',dash_s_do='setsingle')
-	server.parser.mountpoint = mountpoint
-	server.parse(errex=1)
-	server.flags = 0
-	#server.multithreaded = False;
-	server.multithreaded = True;
-	writeout_threads = []
-	for i in range(server.nr_imap_threads):
-		t = testthread(server, i)
-		t.start()
-		writeout_threads.append(t)
-	server.main()
-	global do_writeout
-	do_writeout = 0
-	for t in writeout_threads:
-		print "joining thread..."
-		t.join()
-		print "done joining thread"
-	log_info("unmount: flushing caches")
-	server.flush_dirent_cache()
-	imap_times_print(1)
-	log_info("done")
+	try:
+		server = Gmailfs(namedOptions,mountpoint,version="gmailfs 6.6.6",usage='',dash_s_do='setsingle')
+		server.parser.mountpoint = mountpoint
+		server.parse(errex=1)
+		server.flags = 0
+		#server.multithreaded = False;
+		server.multithreaded = True;
+		writeout_threads = []
+		for i in range(server.nr_imap_threads):
+			t = testthread(server, i)
+			t.start()
+			writeout_threads.append(t)
+		server.main()
+		global do_writeout
+		do_writeout = 0
+		for t in writeout_threads:
+			print "joining thread..."
+			t.join()
+			print "done joining thread"
+		log_info("unmount: flushing caches")
+		server.flush_dirent_cache()
+		imap_times_print(1)
+		log_info("done")		
+	except fuse.FuseError, e:
+		print e
+		print "Please put \"allow_allow_other\" by itself in your /etc/fuse.conf file as root."
+
 
 if __name__ == '__main__':
 	main(1, "2")
