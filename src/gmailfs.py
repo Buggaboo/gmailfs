@@ -198,11 +198,11 @@ def semget(sem):
 def logger(f, name=None):
 	# if logger.fhwr isn't defined and open ...
 	try:
-	   if logger.fhwr:
+		 if logger.fhwr:
 		pass
 	except:
-	   # ... open it
-	   logger.fhwr = open("log.txt","w")
+		 # ... open it
+		 logger.fhwr = open("log.txt","w")
 	if name is None:
 		name = f.func_name
 	def wrapped(*args, **kwargs):
@@ -529,39 +529,39 @@ def GmailConfig(fname):
 	global DefaultUsername, DefaultPassword, DefaultFsname
 	global NumberQueryRetries
 	if cp.read(fname) == []:
-	  log_warning("Unable to read configuration file: " + str(fname))
-	  return
+		log_warning("Unable to read configuration file: " + str(fname))
+		return
 
 	sections = cp.sections()
 	if "account" in sections:
-	  options = cp.options("account")
-	  if "username" in options:
+		options = cp.options("account")
+		if "username" in options:
 		DefaultUsername = cp.get("account", "username")
-	  if "password" in options:
+		if "password" in options:
 		DefaultPassword = cp.get("account", "password")
 	else:
-	  log.error("Unable to find GMail account configuration")
+		log.error("Unable to find GMail account configuration")
 
 	if "filesystem" in sections:
-	  options = cp.options("filesystem")
-	  if "fsname" in options:
+		options = cp.options("filesystem")
+		if "fsname" in options:
 		DefaultFsname = cp.get("filesystem", "fsname")
 	else:
-	  log_warning("Using default file system (Dangerous!)")
-	  
+		log_warning("Using default file system (Dangerous!)")
+		
 	if "logs" in sections:
-	  options = cp.options("logs")
-	  if "level" in options:
+		options = cp.options("logs")
+		if "level" in options:
 		level = cp.get("logs", "level")
 		log.setLevel(logging._levelNames[level])
-	  if "logfile" in options:
+		if "logfile" in options:
 		logfile = abspath(expanduser(cp.get("logs", "logfile")))
 	log.removeHandler(defaultLoggingHandler)
 	_addLoggingHandlerHelper(logging.handlers.RotatingFileHandler(logfile, "a", 5242880, 3))
 
 	if "references" in sections:
-	  options = cp.options("references")
-	  for option in options:
+		options = cp.options("references")
+		for option in options:
 		record = cp.get("references",option)
 		fields = record.split(':')
 		if len(fields)<1 or len(fields)>3:
@@ -667,14 +667,14 @@ class testthread(Thread):
 
 class reference_class:
 	def __init__(self,fsname,username=None,password=None):
-	  self.fsname = fsname
-	  if not username: # NOTE: username is None or username == '' is equivalent not username ; empty strings boolean evaluated are false and None is also false.
+		self.fsname = fsname
+		if not username: # NOTE: username is None or username == '' is equivalent not username ; empty strings boolean evaluated are false and None is also false.
 		self.username = DefaultUsername
-	  else:
+		else:
 		self.username = username
-	  if not password: # NOTE: see 'not username' password is None or password == '':
+		if not password: # NOTE: see 'not username' password is None or password == '':
 		self.password = DefaultPassword
-	  else:
+		else:
 		self.password = password
 
 # This ensures backwards compatability where
@@ -1096,19 +1096,19 @@ class GmailInode(Dirtyable):
 		dev = "11"
 		#subject = (InodeSubjectPrefix+ " " +
 			 #VersionTag	 + "=" + GMAILFS_VERSION+ " " +
-				 #InodeTag	   + "=" + str(self.ino)+ " " +
+				 #InodeTag		 + "=" + str(self.ino)+ " " +
 			 #DevTag		 + "=" + dev + " " +
 		 #NumberLinksTag + "=" + str(self.i_nlink)+ " " +
-		 #FsNameTag	  + "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
+		 #FsNameTag		+ "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
 		 #"")
 		# linear time string concatenation, I have no idea if this is worth it... what the hey
 		subject = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
 				InodeSubjectPrefix, " " ,
 				VersionTag	 , "=" , GMAILFS_VERSION, " " ,
-				InodeTag	   , "=" , str(self.ino), " " ,
+				InodeTag		 , "=" , str(self.ino), " " ,
 				DevTag		 , "=" , dev , " " ,
 				NumberLinksTag , "=" , str(self.i_nlink), " " ,
-				FsNameTag	  , "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
+				FsNameTag		, "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
 		timeString = str(self.mtime)
 		bsize = str(DefaultBlockSize)
 		symlink_str = ""
@@ -1118,9 +1118,9 @@ class GmailInode(Dirtyable):
 				#UidTag   + "=" + str(os.getuid()) + " " +
 			#GidTag   + "=" + str(os.getgid()) + " " +
 			#SizeTag  + "=" + str(self.size)   + " " +
-			#AtimeTag + "=" + timeString	   + " " +
-			#MtimeTag + "=" + timeString	   + " " +
-			#CtimeTag + "=" + timeString	   + " " +
+			#AtimeTag + "=" + timeString		 + " " +
+			#MtimeTag + "=" + timeString		 + " " +
+			#CtimeTag + "=" + timeString		 + " " +
 			#BSizeTag + "=" + bsize			+ " " +
 			#SymlinkTag+"=" + LinkStartDelim  + symlink_str + LinkEndDelim +
 			#"")
@@ -1129,9 +1129,9 @@ class GmailInode(Dirtyable):
 				UidTag   , "=" , str(os.getuid()) , " " ,
 				GidTag   , "=" , str(os.getgid()) , " " ,
 				SizeTag  , "=" , str(self.size)   , " " ,
-				AtimeTag , "=" , timeString	   , " " ,
-				MtimeTag , "=" , timeString	   , " " ,
-				CtimeTag , "=" , timeString	   , " " ,
+				AtimeTag , "=" , timeString		 , " " ,
+				MtimeTag , "=" , timeString		 , " " ,
+				CtimeTag , "=" , timeString		 , " " ,
 				BSizeTag , "=" , bsize			, " " ,
 				SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
 		return mkmsg(subject, body)
@@ -1174,7 +1174,7 @@ class GmailInode(Dirtyable):
 		self.i_nlink =   subj_hash[NumberLinksTag]
 		#quotedEquals = "=(?:3D)?(.*)"
 		quotedEquals = "=(.*)"
-		#restr = (	  ModeTag  + quotedEquals + ' ' +
+		#restr = (		ModeTag  + quotedEquals + ' ' +
 				#UidTag   + quotedEquals + ' ' +
 					#GidTag   + quotedEquals + ' ' +
 						#SizeTag  + quotedEquals + ' ' +
@@ -1962,7 +1962,7 @@ class Gmailfs(Fuse):
 		if not m: # m == None:
 			return None
 		ret[VersionTag]	 = int(m.group(1))
-		ret[InodeTag]	   = int(m.group(2))
+		ret[InodeTag]		 = int(m.group(2))
 		ret[DevTag]		 = int(m.group(3))
 		ret[NumberLinksTag] = int(m.group(4))
 		return ret
@@ -2219,8 +2219,8 @@ class Gmailfs(Fuse):
 		log_entry("gmailfs.py:Gmailfs:release: %s %x" % (path, int(flags)))
 		# I saw a KeyError get thrown out of this once.  Looking back in
 		# the logs, I saw two consecutive release:
-		# 01/20/10 17:47:47 INFO	   gmailfs.py:Gmailfs:release: /linux-2.6.git/.Makefile.swp 32768
-		# 01/20/10 17:47:49 INFO	   gmailfs.py:Gmailfs:release: /linux-2.6.git/.Makefile.swp 32769
+		# 01/20/10 17:47:47 INFO		 gmailfs.py:Gmailfs:release: /linux-2.6.git/.Makefile.swp 32768
+		# 01/20/10 17:47:49 INFO		 gmailfs.py:Gmailfs:release: /linux-2.6.git/.Makefile.swp 32769
 		#
 		f = self.openfiles[path]
 		if f.close() == 0:
