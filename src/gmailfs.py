@@ -1513,6 +1513,7 @@ class Gmailfs(Fuse):
 		password = DefaultPassword
 		username = DefaultUsername
 		if not imap: # imap == None:
+			# TODO - put this server in the conf file
 			imap = imaplib.IMAP4_SSL("imap.gmail.com", 993)
 			imap.fs = self
 			imap.lock = threading.Semaphore(1)
