@@ -1,32 +1,56 @@
-TODO 05-08-2010
-- possible conflict, regexp in imaplib and gmailfs, probably not supported in pypy
-  - seek regexp alternative, for pypy
+TODO 10-08-2010
+- eliminate thread deadlock in own implementation
+  - investigate whether extra identation in getsem (get semaphore) has anything to do with it
+  - figure out what dirty forks and clean forks have to do with it,
+  - figure out when a thread is through eating (for the moment) :P
 + remove quadratic string concatenation in cpython branch
-- range to xrange
-  - test speed vs. memory
-- redo logging functions to reflect python way with decorators and * and **
-+ create git branches (git checkout -b newbranch)
-  + master, original, this will be synched with git://git.sr71.net/gmailfs.git
-  + cpython, minor alteration from git clone git://git.sr71.net/gmailfs.git
-  + stackless, redo system threads using green threads
-  + jit, like the cpython branch but with specific import alterations to allow use of imaplib and fuse wrapper
-  + dokan, cpython branch but instead of fuse, dokan, for windows only
+  - test dave hansen's unoptimized string concatenations vs. my optimized concatenations
+- enumerate useless branches
+  => use gitk --all & to check on the branching
+- destroy useless branches
++ refactor original code in cpython; submit to owner (Dave Hansen)
+  + eliminate obvious bugs
+
+MOSCOW
+M
+- refactor threads
+- add more tests
+  - /etc/fuse.conf test for 'user_allow_other'
+- change certain range to xrange (check where used in for loop but not as iterator for values)
+S
 - refactor to seperate gmail behaviour policy; basic imap to fuse translation
   * define policy code
   * define baseline behaviour code
-- refactor original code in cpython; submit to owner
+- refactor to python style of coding; prod owner for pull
   - add decorators
-  - add generators if need be
+  - add generators if need be, although bad for envisioned pypy
   - reduce reliance on system threads
-  - more test code using decorators
-  - write native python code
+  - more test code using decorators (use logger function)
+    => decide what it should do first...
+  - write more native python code
+- redo logging functions to reflect python way with decorators and * and **  
+  - rethink
+  - redesign with decorators
+  - implement
+C
 - refactor to pypy code (with jit)
   - import imaplib (pure cpython)
-  - import pyfuse (cpython wrapper for C lib)
+  - import python-fuse (need cpython wrapper for C lib probably)
   - probably need to rewrite system threads
++ figure out possible conflict, regexp in imaplib, probably not supported in pypy
+  => pypy has regexp support, although basic, probably good enough for imaplib
+  - test hypothesis pypy good enough
 - speed test (pypy-jit vs. cpython)
 - refactor to pypy-stackless code
   - remove threads, introduce green threads
   - refactor to asynch sockets using green threads (possible?)
+W
+- refactor gmail specific code to support any ol' imap service on any server
+  - introduce concept of policy and behaviour
+  => gmail sets its own policies as any other service provider
+  => but they all have a baseline behaviour as far as IMAP goes
+  - figure out what are these baseline behaviours
+  - redesign
+  - refactor
 - write sikuli script to create test accounts on gmail
   
