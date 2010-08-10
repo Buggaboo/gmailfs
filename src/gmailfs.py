@@ -200,8 +200,8 @@ def semget(sem):
 def logger(f, name=None):
 	# if logger.fhwr isn't defined and open ...
 	try:
-		 if logger.fhwr:
-		pass
+		if logger.fhwr:
+			pass
 	except:
 		 # ... open it
 		 logger.fhwr = open("log.txt","w")
