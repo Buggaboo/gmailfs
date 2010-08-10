@@ -602,7 +602,7 @@ class testthread(Thread):
 		# 0 means it got written out
 		# 1 means it was not dirty
 		took = end - start
-		msg =  "[%d] (%2d sec), %%s %s because '%s' %d left" % (self.nr, took, object.to_str(), reason, size)
+		msg =  "[%d] (%2d sec), %%s %s because '%s' %d left" % (self.nr, took, str(object), reason, size)
 		if ret == 0:
 			print(msg % ("wrote out"));
 		else:
@@ -860,7 +860,7 @@ def write_out_nolock(o, desc):
 	elif isinstance(o, GmailBlock):
 		ret = o.b_write_out(desc)
 	else:
-		print("unknown dirty object:"+o.to_str())
+		print("unknown dirty object:"+str(o))
 	if ret != 0:
 		o.mark_dirty("failed writeout");
 	log_debug1("write_out() finished '%s' (cleared '%s')" % (desc, clear_msg))
@@ -890,7 +890,6 @@ class Dirtyable(object):
 
 	# NOTE: deprecated for more pythonesque overloaded __str__
 	#def to_str(self):
-		#return "Dirtyable.to_str()"
 	def __str__(self):
 		return "Dirtyable"
 
@@ -932,8 +931,10 @@ class GmailDirent(Dirtyable):
 		self.dirent_msg = dirent_msg
 		self.inode = inode
 		self.fs = fs
-
-	def to_str(self):
+	
+	# NOTE: deprecated for more pythonesque __str__
+	#def to_str(self):
+	def __str__():
 		return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
 
 	def path(self):
@@ -1039,7 +1040,9 @@ class GmailInode(Dirtyable):
 			# on having one of these around
 			self.inode_msg = self.mk_inode_msg()
 	#@-node:__init__
-	def to_str(self):
+	# deprecated for pythonesque __str__
+	#def to_str(self):
+	def __str__():
 		return "inode(%s)" % (str(self.ino))
 
 	def mark_dirty(self, desc):
@@ -1314,10 +1317,8 @@ class GmailBlock(Dirtyable):
 		log_debug1("created new block: %d" % (self.block_nr))
 		gmail_blocks[self] = self
 
-# TODO - deprecated, so remove, also calls to the function as well
+# TODO + deprecated, so remove, also calls to the function as well
 #	def to_str(self):
-#		return "block(%d)" % (self.block_nr)
-
 	def __str__(self):
 		return "block(%d)" % self.block_nr
 
@@ -1828,7 +1829,7 @@ class Gmailfs(Fuse):
 				# exception immediately if empty
 				object = self.fs.dirty_objects.get()
 				write_out(object, "flush_dirent_cache()")
-				log_info("flush_dirent_cache() wrote out %s" % object.to_str())
+				log_info("flush_dirent_cache() wrote out %s" % str(object))
 			except:
 				log_info("no more object to flush")
 				break
