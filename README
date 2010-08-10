@@ -51,3 +51,10 @@ In the gmail web interface, under the label "linux_fs_4":
 # put this in a script
 #!/bin/sh
 kill $(ps axf | egrep "python.*gmailfs" | grep -v 'grep' | sed 's/^ \([0-9]\+\).*$/\1/')
+
+#!/bin/sh
+set -e -x
+grep -n user_allow_other /etc/fuse.conf
+mkdir -p ~/mnt/gmailfs-jasm
+python src/gmailfs.py -o allow_root -d 9 /home/jasm/mnt/gmailfs-jasm/ | tee -a log.txt
+
