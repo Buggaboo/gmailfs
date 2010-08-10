@@ -891,7 +891,7 @@ class Dirtyable(object):
 	# NOTE: deprecated for more pythonesque overloaded __str__
 	#def to_str(self):
 	def __str__(self):
-		return "Dirtyable"
+		return "Dirtyable.__str__"
 
 	def dirty(self):
 		return self.dirty_reasons.qsize()
