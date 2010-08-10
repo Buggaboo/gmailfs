@@ -896,10 +896,10 @@ class Dirtyable(object):
 		return "Dirtyable"
 
 	def dirty(self):
-			return self.dirty_reasons.qsize()
+		return self.dirty_reasons.qsize()
 
 	def dirty_reason(self):
-			return "%s (%d more reasons hidden)" % (self.__dirty, self.dirty())
+		return "%s (%d more reasons hidden)" % (self.__dirty, self.dirty())
 
 	def clear_dirty(self, nr):
 		msgs = []
