@@ -352,7 +352,7 @@ def imap_uid(imap, cmd, arg1, arg2 = None, arg3 = None, arg4 = None):
 	while not ret: # previously ret == None, this change is more pythonic
 		tries = tries - 1
 		try:
-				ret = imap.uid(cmd, arg1, arg2, arg3)
+			ret = imap.uid(cmd, arg1, arg2, arg3)
 		except Exception, e:
 			log_error("imap.uid() error: %s (tries left: %d)" % (str(e), tries))
 			imap.fs.kick_imap(imap)
