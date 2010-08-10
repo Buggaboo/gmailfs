@@ -390,7 +390,7 @@ def imap_getquotaroot(imap, fsNameVar):
 	ret = None
 	while ret == None:
 		try:
-				ret = imap.getquotaroot(fsNameVar)
+			ret = imap.getquotaroot(fsNameVar)
 		except RuntimeError, e:
 			log_error("imap.getquotaroot() error: %s" % (str(e)))
 			imap.fs.kick_imap(imap)
