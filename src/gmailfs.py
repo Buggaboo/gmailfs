@@ -535,39 +535,39 @@ def GmailConfig(fname):
 	if "account" in sections:
 		options = cp.options("account")
 		if "username" in options:
-		DefaultUsername = cp.get("account", "username")
+			DefaultUsername = cp.get("account", "username")
 		if "password" in options:
-		DefaultPassword = cp.get("account", "password")
+			DefaultPassword = cp.get("account", "password")
 	else:
 		log.error("Unable to find GMail account configuration")
 
 	if "filesystem" in sections:
 		options = cp.options("filesystem")
 		if "fsname" in options:
-		DefaultFsname = cp.get("filesystem", "fsname")
+			DefaultFsname = cp.get("filesystem", "fsname")
 	else:
 		log_warning("Using default file system (Dangerous!)")
 		
 	if "logs" in sections:
 		options = cp.options("logs")
 		if "level" in options:
-		level = cp.get("logs", "level")
+			level = cp.get("logs", "level")
 		log.setLevel(logging._levelNames[level])
 		if "logfile" in options:
-		logfile = abspath(expanduser(cp.get("logs", "logfile")))
+			logfile = abspath(expanduser(cp.get("logs", "logfile")))
 	log.removeHandler(defaultLoggingHandler)
 	_addLoggingHandlerHelper(logging.handlers.RotatingFileHandler(logfile, "a", 5242880, 3))
 
 	if "references" in sections:
 		options = cp.options("references")
 		for option in options:
-		record = cp.get("references",option)
-		fields = record.split(':')
-		if len(fields)<1 or len(fields)>3:
-			log_warning("Invalid reference '%s' in configuration." % (record))
-			continue
-		reference = reference_class(*fields)
-		References[option] = reference
+			record = cp.get("references",option)
+			fields = record.split(':')
+			if len(fields)<1 or len(fields)>3:
+				log_warning("Invalid reference '%s' in configuration." % (record))
+				continue
+			reference = reference_class(*fields)
+			References[option] = reference
 
 do_writeout = 1
 #@+node:mythread
@@ -668,13 +668,13 @@ class reference_class:
 	def __init__(self,fsname,username=None,password=None):
 		self.fsname = fsname
 		if not username: # NOTE: username is None or username == '' is equivalent not username ; empty strings boolean evaluated are false and None is also false.
-		self.username = DefaultUsername
+			self.username = DefaultUsername
 		else:
-		self.username = username
-		if not password: # NOTE: see 'not username' password is None or password == '':
-		self.password = DefaultPassword
-		else:
-		self.password = password
+			self.username = username
+			if not password: # NOTE: see 'not username' password is None or password == '':
+				self.password = DefaultPassword
+			else:
+				self.password = password
 
 # This ensures backwards compatability where
 # old filesystems were stored with 7bit encodings
@@ -2506,7 +2506,7 @@ defaultLogFormatter = logging.Formatter("%(asctime)s %(levelname)-10s %(message)
 defaultLoggingHandler = logging.StreamHandler(sys.stdout)
 _addLoggingHandlerHelper(defaultLoggingHandler)
 
-GmailConfig([SystemConfigFile,UserConfigFile])
+GmailConfig([SystemConfigFile,UserConfigFile]) # TODO - change to lowercase (confusing), this is a function.
 try:
 	libgmail.ConfigLogs(log)
 except:
