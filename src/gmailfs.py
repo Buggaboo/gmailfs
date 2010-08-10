@@ -92,12 +92,6 @@ fuse.fuse_python_api = (0, 2)
 
 import thread
 import quopri
-# TODO - remove following lgconstants import, useless import since move to IMAP protocol
-#try:
-#	from lgconstants import *
-#except ImportError, e:
-#	print "You need to have the original libgmail library?"
-#	print e
 
 import sys,traceback,re,string,time,tempfile,array,logging,logging.handlers
 
