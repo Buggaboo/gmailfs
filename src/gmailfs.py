@@ -74,7 +74,7 @@ except ImportError, e:
 	print e
 	print "Are you sure fuse is built into the kernel or loaded as a module?"
 	print "In a linux shell type \"lsmod | grep fuse\" to find out"
-import fuse
+
 import imaplib
 import email
 import random
@@ -196,6 +196,7 @@ def semget(sem):
 	sem_msg[sem] = "acquired semget"
 	return "OK"
 
+# TODO - plan how to use logger as decorator function
 def logger(f, name=None):
 	# if logger.fhwr isn't defined and open ...
 	try:
