@@ -940,7 +940,7 @@ class GmailDirent(Dirtyable):
 	
 	# NOTE: deprecated for more pythonesque __str__
 	#def to_str(self):
-	def __str__():
+	def __str__(self):
 		return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
 
 	def path(self):
@@ -1048,7 +1048,7 @@ class GmailInode(Dirtyable):
 	#@-node:__init__
 	# deprecated for pythonesque __str__
 	#def to_str(self):
-	def __str__():
+	def __str__(self):
 		return "inode(%s)" % (str(self.ino))
 
 	def mark_dirty(self, desc):
