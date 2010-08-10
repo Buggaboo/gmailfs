@@ -494,7 +494,6 @@ def imap_trash_msg(imap, msg):
 	imap_trash_uids(imap, [str(msg.uid)])
 
 def imap_append(info, imap, msg):
-	#gmsg = libgmail.GmailComposedMessage(username, subject, body)
 	log_imap("imap_append(%s)" % (info))
 	log_debug2("append Subject: ->%s<-" % (msg['Subject']))
 	log_debug3("entire message: ->%s<-" % str(msg))
@@ -1518,7 +1517,7 @@ class Gmailfs(Fuse):
 			imap.fs = self
 			imap.lock = threading.Semaphore(1)
 		else:
-			imap.open("imap.gmail.com", 993) #libgmail.GmailAccount(username, password)
+			imap.open("imap.gmail.com", 993)
 			if username.find("@")<0:
 				username = username+"@gmail.com"
 		imap.login(username, password)
@@ -2507,10 +2506,6 @@ defaultLoggingHandler = logging.StreamHandler(sys.stdout)
 _addLoggingHandlerHelper(defaultLoggingHandler)
 
 GmailConfig([SystemConfigFile,UserConfigFile]) # TODO - change to lowercase (confusing), this is a function.
-try:
-	libgmail.ConfigLogs(log)
-except:
-	pass
 
 def main(mountpoint, namedOptions):
 	# TODO - use optparse or pyopt
@@ -2521,7 +2516,7 @@ def main(mountpoint, namedOptions):
 		print "am lead thread"
 	else:
 		print "am NOT lead thread"
-	server = Gmailfs(namedOptions,mountpoint,version="gmailfs 0.8.0",usage='',dash_s_do='setsingle')
+	server = Gmailfs(namedOptions,mountpoint,version="gmailfs 6.6.6",usage='',dash_s_do='setsingle')
 	server.parser.mountpoint = mountpoint
 	server.parse(errex=1)
 	server.flags = 0
