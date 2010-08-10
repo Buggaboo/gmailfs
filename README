@@ -18,6 +18,7 @@ As root:
 > grep -n '/home' /etc/fstab # if your home is mounted seperately
 > nano +linenr /etc/fstab # add user_xattr for extended attributes 
 > apt-getorwhatevereasy-install fuse
+> modprobe fuse
 > easy-install fuse-python
 > cat user_allow_other >> /etc/fuse.conf (if not yet present)
 
@@ -27,6 +28,7 @@ As normal user:
 > chmod 600 ~/.gmail.conf
 > mkdir -p ~/mnt/gmailfs
 > python gmailfs.py -o allow_root -d ~/mnt/gmailfs # -d for debug
+> fusermount -u ~/mnt/gmailfs # unmount
 
 WARNING: google reserves the right to revoke your login to gmail, so 
 don't test on your personal e-mail address!
