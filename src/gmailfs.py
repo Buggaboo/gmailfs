@@ -199,7 +199,7 @@ def logger(f, name=None):
 	# if logger.fhwr isn't defined and open ...
 	try:
 	   if logger.fhwr:
-		  pass
+		pass
 	except:
 	   # ... open it
 	   logger.fhwr = open("log.txt","w")
@@ -536,16 +536,16 @@ def GmailConfig(fname):
 	if "account" in sections:
 	  options = cp.options("account")
 	  if "username" in options:
-		  DefaultUsername = cp.get("account", "username")
+		DefaultUsername = cp.get("account", "username")
 	  if "password" in options:
-		  DefaultPassword = cp.get("account", "password")
+		DefaultPassword = cp.get("account", "password")
 	else:
 	  log.error("Unable to find GMail account configuration")
 
 	if "filesystem" in sections:
 	  options = cp.options("filesystem")
 	  if "fsname" in options:
-		  DefaultFsname = cp.get("filesystem", "fsname")
+		DefaultFsname = cp.get("filesystem", "fsname")
 	else:
 	  log_warning("Using default file system (Dangerous!)")
 	  
@@ -562,13 +562,13 @@ def GmailConfig(fname):
 	if "references" in sections:
 	  options = cp.options("references")
 	  for option in options:
-		  record = cp.get("references",option)
-		  fields = record.split(':')
-		  if len(fields)<1 or len(fields)>3:
-			  log_warning("Invalid reference '%s' in configuration." % (record))
-			  continue
-		  reference = reference_class(*fields)
-		  References[option] = reference
+		record = cp.get("references",option)
+		fields = record.split(':')
+		if len(fields)<1 or len(fields)>3:
+			log_warning("Invalid reference '%s' in configuration." % (record))
+			continue
+		reference = reference_class(*fields)
+		References[option] = reference
 
 do_writeout = 1
 #@+node:mythread
@@ -669,13 +669,13 @@ class reference_class:
 	def __init__(self,fsname,username=None,password=None):
 	  self.fsname = fsname
 	  if not username: # NOTE: username is None or username == '' is equivalent not username ; empty strings boolean evaluated are false and None is also false.
-		  self.username = DefaultUsername
+		self.username = DefaultUsername
 	  else:
-		  self.username = username
+		self.username = username
 	  if not password: # NOTE: see 'not username' password is None or password == '':
-		  self.password = DefaultPassword
+		self.password = DefaultPassword
 	  else:
-		  self.password = password
+		self.password = password
 
 # This ensures backwards compatability where
 # old filesystems were stored with 7bit encodings
@@ -923,7 +923,7 @@ class Dirtyable(object):
 		except:
 			log_debug("mark_dirty('%s') skipped global list, already dirty" % str(self))
 		log_debug1("mark_dirty('%s') because '%s' (%d reasons)" % \
-		  (str(self), desc, self.dirty_reasons.qsize()))
+		(str(self), desc, self.dirty_reasons.qsize()))
 # end class Dirtyable
 
 #@+node:class GmailDirent
@@ -1095,12 +1095,12 @@ class GmailInode(Dirtyable):
 	def mk_inode_msg(self):
 		dev = "11"
 		#subject = (InodeSubjectPrefix+ " " +
-			   #VersionTag	 + "=" + GMAILFS_VERSION+ " " +
-				   #InodeTag	   + "=" + str(self.ino)+ " " +
-			   #DevTag		 + "=" + dev + " " +
-		   #NumberLinksTag + "=" + str(self.i_nlink)+ " " +
-		   #FsNameTag	  + "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
-		   #"")
+			 #VersionTag	 + "=" + GMAILFS_VERSION+ " " +
+				 #InodeTag	   + "=" + str(self.ino)+ " " +
+			 #DevTag		 + "=" + dev + " " +
+		 #NumberLinksTag + "=" + str(self.i_nlink)+ " " +
+		 #FsNameTag	  + "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
+		 #"")
 		# linear time string concatenation, I have no idea if this is worth it... what the hey
 		subject = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
 				InodeSubjectPrefix, " " ,
@@ -1136,7 +1136,7 @@ class GmailInode(Dirtyable):
 				SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
 		return mkmsg(subject, body)
 
-#		  SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
+#		SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
 #		ret[LinkToTag]   =	 m.group(4)
 #	link_to  = src_msg_hash[LinkToTag]
 	def dec_nlink(self):
@@ -1754,7 +1754,7 @@ class Gmailfs(Fuse):
 		log_debug("about to follow link in body:"+inode.msg.as_string())
 		body = fixQuotedPrintable(inode.msg.as_string())
 		m = re.search(SymlinkTag+'='+LinkStartDelim+'(.*)'+
-					  LinkEndDelim,body)
+					LinkEndDelim,body)
 		return m.group(1)
 	#@-node:readlink
 
@@ -1765,7 +1765,7 @@ class Gmailfs(Fuse):
 		log_debug3("getting dir "+path)
 		fspath = _pathSeparatorEncode(path)
 		log_debug3("querying for:"+''+PathNameTag+'='+PathStartDelim+
-				  fspath+PathEndDelim)
+				fspath+PathEndDelim)
 		# FIX need to check if directory exists and return error if it doesnt, actually
 		# this may be done for us by fuse
 		q = ''+PathNameTag+'='+PathStartDelim+fspath+PathEndDelim
@@ -1891,17 +1891,17 @@ class Gmailfs(Fuse):
 		# any change in here must be reflected in the two
 		# functions below
 		#subject =(DirentSubjectPrefix+ " " +
-		  #PathNameTag + "=" + PathStartDelim  + str + PathEndDelim + " " +
-		  #FileNameTag + "=" + FileStartDelim  + str + FileEndDelim + " " +
-				  #RefInodeTag + "=" + str				+ " " +
-			  #FsNameTag   + "=" + MagicStartDelim + str + MagicEndDelim+ " " +
-		  #VersionTag  + "=" + str)
+		#PathNameTag + "=" + PathStartDelim  + str + PathEndDelim + " " +
+		#FileNameTag + "=" + FileStartDelim  + str + FileEndDelim + " " +
+				#RefInodeTag + "=" + str				+ " " +
+			#FsNameTag   + "=" + MagicStartDelim + str + MagicEndDelim+ " " +
+		#VersionTag  + "=" + str)
 		subject =(''.join([DirentSubjectPrefix, " " ,
-		  PathNameTag , "=" , PathStartDelim  , s , PathEndDelim , " " ,
-		  FileNameTag , "=" , FileStartDelim  , s , FileEndDelim , " " ,
-		  RefInodeTag , "=", s, " " ,
-		  FsNameTag   , "=" , MagicStartDelim , s , MagicEndDelim, " " ,
-		  VersionTag  , "=" , s]))
+		PathNameTag , "=" , PathStartDelim  , s , PathEndDelim , " " ,
+		FileNameTag , "=" , FileStartDelim  , s , FileEndDelim , " " ,
+		RefInodeTag , "=", s, " " ,
+		FsNameTag   , "=" , MagicStartDelim , s , MagicEndDelim, " " ,
+		VersionTag  , "=" , s]))
 		return subject
 
 	def parse_dirent_msg(self, msg):
