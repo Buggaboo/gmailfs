@@ -1659,7 +1659,7 @@ class Gmailfs(Fuse):
 	flags = 1
 
 	#@-node:attribs
-
+	# NOTE: Is this a singleton? Maybe it's better to use a dict.
 	class GmailStat(fuse.Stat):
 		def __init__(self):
 			self.st_mode = 0
