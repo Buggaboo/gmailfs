@@ -47,3 +47,7 @@ In the gmail web interface, under the label "linux_fs_4":
 * The subject of the e-mails have inode stuff (gibberish to me);
 * when the gmailfs mounted files have any content, those are stored as
 "noname" attachments. With the original input.
+
+# put this in a script
+#!/bin/sh
+kill $(ps axf | egrep "python.*gmailfs" | grep -v 'grep' | sed 's/^ \([0-9]\+\).*$/\1/')
