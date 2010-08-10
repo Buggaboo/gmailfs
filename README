@@ -1,4 +1,4 @@
-README 05-08-2010
+README 10-08-2010
 
 Scratching an itch again. Primary goal: make gmailfs work on any generic 
 linux (fuse) / windows (dokan) installation on any imap-based host. 
@@ -12,24 +12,30 @@ variant with threads, pypy-stackless, pypy-jit.
 Since I'm going to use pypy; no generators are allowed for iterator 
 object creation, I hope I can keep decorators.
 
-HOWTO
+HOWTO 10-08-2010
 
 As root:
-> apt-getorwhatevereasy-install python-fuse fuse
-> cat user_allow_other >> /etc/fuse.conf
+> grep -n '/home' /etc/fstab # if your home is mounted seperately
+> nano +linenr /etc/fstab # add user_xattr for extended attributes 
+> apt-getorwhatevereasy-install fuse
+> easy-install fuse-python
+> cat user_allow_other >> /etc/fuse.conf (if not yet present)
 
 As normal user:
 > git clone thisrepository
-> cp gmailfs/conf/gmailfs.conf ~/.gmail.conf # add own info
+> cp gmailfs/conf/gmailfs.conf ~/.gmail.conf # adapt to own info
 > chmod 600 ~/.gmail.conf
 > mkdir -p ~/mnt/gmailfs
 > python gmailfs.py -o allow_root -d ~/mnt/gmailfs # -d for debug
 
-Gmailfs requires ext4(?) with extended attributes (xattr) etc. Not sure 
-though, waiting for Dave's e-mail response. It's partially working on my 
-rig, I have reiserfs (aka murderfs) and no extended attributes.
+WARNING: google reserves the right to revoke your login to gmail, so 
+don't test on your personal e-mail address!
 
-RESULTS
+Gmailfs requires ext4(?) with extended attributes (xattr). Not sure 
+though, waiting for Dave's e-mail response. It's partially working on my 
+rig, I have reiserfs (aka murderfs) and no extended attributes (yet).
+
+RESULTS 10-08-2010
 
 With reiserfs with no extended attributes it works like this:
 
