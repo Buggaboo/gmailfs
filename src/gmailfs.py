@@ -2541,7 +2541,7 @@ def main(mountpoint, namedOptions):
 		log_info("done")		
 	except fuse.FuseError, e:
 		print e
-		print "Please put \"allow_allow_other\" by itself in your /etc/fuse.conf file as root."
+		print "Please put \"allow_other_user\" by itself in your /etc/fuse.conf file as root."
 
 
 if __name__ == '__main__':
