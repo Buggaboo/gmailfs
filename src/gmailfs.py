@@ -1025,7 +1025,7 @@ class GmailInode(Dirtyable):
 		self.inode_cache_lock = thread.allocate_lock()
 		# protected by fs.inode_cache_lock
 		self.pinned = 0
-		if inode_msg != None:
+		if inode_msg:
 			self.inode_msg = inode_msg
 			self.fill_from_inode_msg()
 		else:

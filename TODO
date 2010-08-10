@@ -1,6 +1,13 @@
 TODO 10-08-2010
+- repair FIXME with Dave Hansen (top priority)
+  - FIXME, don't allow directory unlinking...
+  - FIXME, using time for ino is a bad idea...
+  - FIXME, we should probably make a mkfs command to make the root inode...
+- persuade dave to rename functions to lowercase initials where that is not the case
+- send patch to Dave  
 - eliminate thread deadlock in own implementation
-  - investigate whether extra identation in getsem (get semaphore) has anything to do with it
+  + investigate whether extra identation in getsem (get semaphore) has anything to do with it
+  => no it doesn't, it's related to some nasty behaviour of some global lock, related to a FIXME
   - figure out what dirty forks and clean forks have to do with it,
   - figure out when a thread is through eating (for the moment) :P
 - refactor: when a function is invoked it announces itself with log_entry, refactor this away with a decorator @log_entry
