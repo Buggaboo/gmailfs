@@ -2080,7 +2080,7 @@ class Gmailfs(Fuse):
 		ret = inode.xattr[attr]
 		if size == 0:
 			return len(ret)
-			return ret
+		return ret
 	#@-node:getxattr
 
 	#@+node:setxattr
