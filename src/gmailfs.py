@@ -214,7 +214,7 @@ def timeit(fun):
 		obj = fun(*args, **kwargs)
 		te = time()
 		time_elapsed = te - ts
-		log.info("[%.2f] time elapsed: %.2f" % (te,time_elapsed))
+		print "[%.2f] time elapsed: %.10f" % (te,time_elapsed)
 		return obj
 	return timed
 
@@ -224,7 +224,7 @@ def logzilla(fun):
 		if not am_lead_thread():
 			return fun(*args, **kwargs)		
 		from time import time
-		print "[%.2f] Entering %s with (*args, **kwargs): (%s, %s)" % (time(), fun.func_name, str(args), str(kwargs))
+		print "[%.2f] Entering %s with (*args, **kwargs): \n\t(%s, %s)" % (time(), fun.func_name, str(args), str(kwargs))
 		obj = fun(*args, **kwargs)
 		print "[%.2f] Exiting %s" % (time(), fun.func_name)
 		return obj
@@ -906,6 +906,8 @@ class Dirtyable(object):
 
 	# NOTE: deprecated for more pythonesque overloaded __str__
 	#def to_str(self):
+	# TODO - figure out why we have this function at all... except for debugging
+	@logzilla
 	def __str__(self):
 		return "Dirtyable.__str__"
 
@@ -950,6 +952,7 @@ class GmailDirent(Dirtyable):
 	
 	# NOTE: deprecated for more pythonesque __str__
 	#def to_str(self):
+	@logzilla
 	def __str__(self):
 		return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
 
@@ -1011,6 +1014,7 @@ last_ino = -1
 # Should we store this persistently in the
 # root inode perhaps?
 #
+@logzilla
 def get_ino():
 	global last_ino
 	ret = int(time.time()) << 16
@@ -1025,6 +1029,7 @@ class GmailInode(Dirtyable):
 	Class used to store gmailfs inode details
 	"""
 	#@+node:__init__
+	@logzilla
 	def __init__(self, inode_msg, fs):
 		Dirtyable.__init__(self)
 		# We can either make this inode from scratch, or
@@ -1058,8 +1063,13 @@ class GmailInode(Dirtyable):
 	#@-node:__init__
 	# deprecated for pythonesque __str__
 	#def to_str(self):
+	@logzilla
 	def __str__(self):
-		return "inode(%s)" % (str(self.ino))
+		try:
+			return "inode(%s)" % (str(self.ino))
+		except:
+			return "No inode identifier available (yet)."
+
 
 	def mark_dirty(self, desc):
 		log_debug2("inode mark_dirty(%s) size: '%s'" % (desc, str(self.size)))
@@ -1109,7 +1119,8 @@ class GmailInode(Dirtyable):
 			xattr_name = m.group(1)
 			log_debug3("fill_xattrs() xattr_name: '%s'" % (xattr_name))
 			self.xattr[xattr_name] = part.get_payload(decode=True)
-
+	
+	@logzilla
 	def mk_inode_msg(self):
 		dev = "11"
 		#subject = (InodeSubjectPrefix+ " " +
@@ -1147,11 +1158,11 @@ class GmailInode(Dirtyable):
 				UidTag   , "=" , str(os.getuid()) , " " ,
 				GidTag   , "=" , str(os.getgid()) , " " ,
 				SizeTag  , "=" , str(self.size)   , " " ,
-				AtimeTag , "=" , timeString		 , " " ,
-				MtimeTag , "=" , timeString		 , " " ,
-				CtimeTag , "=" , timeString		 , " " ,
-				BSizeTag , "=" , bsize			, " " ,
-				SymlinkTag,"=" , LinkStartDelim  , symlink_str , LinkEndDelim]))
+				AtimeTag , "=" , timeString	  , " " ,
+				MtimeTag , "=" , timeString	  , " " ,
+				CtimeTag , "=" , timeString	  , " " ,
+				BSizeTag , "=" , bsize		  , " " ,
+				SymlinkTag,"=" , LinkStartDelim   , symlink_str , LinkEndDelim]))
 		return mkmsg(subject, body)
 
 #		SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
@@ -1169,7 +1180,8 @@ class GmailInode(Dirtyable):
 		to_trash.extend(block_uids)
 		to_trash.append(str(self.inode_msg.uid))
 		return to_trash
-
+	
+	@logzilla
 	def fill_from_inode_msg(self):
 		"""
 		Setup the inode instances members from the gmail inode message
@@ -1336,7 +1348,10 @@ class GmailBlock(Dirtyable):
 # TODO + deprecated, so remove, also calls to the function as well
 #	def to_str(self):
 	def __str__(self):
-		return "block(%d)" % self.block_nr
+		try:
+			return "block(%d)" % self.block_nr
+		except:
+			return "No block_nr identifier set (yet)."
 
 	def covers(self, off, len):
 		# does this block cover the specified buffer?
