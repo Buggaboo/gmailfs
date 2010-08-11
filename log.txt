@@ -1,0 +1,3247 @@
+  24:16.88 imaplib version 2.58
+  24:16.88 new IMAP4 connection, tag=JLPH
+  24:16.90 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  24:17.21 imaplib version 2.58
+  24:17.21 new IMAP4 connection, tag=JGHK
+  24:17.23 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  24:17.50 imaplib version 2.58
+  24:17.50 new IMAP4 connection, tag=MGEI
+  24:17.51 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  24:17.77 imaplib version 2.58
+  24:17.77 new IMAP4 connection, tag=GMBA
+  24:17.79 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  24:18.06 imaplib version 2.58
+  24:18.06 new IMAP4 connection, tag=BJLO
+  24:18.08 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.9
+flags=0x0000003b
+max_readahead=0x00020000
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleVersion: 0.2. This fuse python version is supported.
+[1281543856.81] time elapsed: 0.0000050068
+[1281543856.81] time elapsed: 0.0000040531
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000038147
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0001981258
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000040531
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000021458
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000028610
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000030994
+[1281543856.81] time elapsed: 0.0000028610
+am lead thread
+mailbox now has 16 messages
+connected[0]
+connected[1]
+connected[2]
+connected[3]
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] do[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 2, opcode: ACCESS (34), nodeid: 1, insize: 48
+ACCESS / 00
+   unique: 2, error: -38 (Function not implemented), outsize: 16
+unique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56
+ne
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+[1281543915.07] Entering __init__ with (*args, **kwargs): 
+	((<__main__.GmailInode object at 0x82091ec>, <email.message.Message instance at 0x820cc4c>, <__main__.Gmailfs object at 0x81ff1cc>), {})
+[1281543915.07] Entering __str__ with (*args, **kwargs): 
+	((<__main__.GmailInode object at 0x82091ec>,), {})
+Traceback (most recent call last):
+  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+  File "src/gmailfs.py", line 1720, in getattr
+    
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    
+  File "src/gmailfs.py", line 2513, in lookup_dirent
+    # lookups for now.
+  File "src/gmailfs.py", line 2494, in prefetch_dirent_msgs
+    inode_msguids = _getMsguidsByQuery("batch inode lookup", self.imap, query, 1)
+  File "src/gmailfs.py", line 2462, in mk_pinned_inodes
+    inodes = []
+  File "src/gmailfs.py", line 2452, in mk_pinned_inode
+    log_debug2("pinned new inode nr: '%s'" % (str(ret.ino)))
+  File "src/gmailfs.py", line 228, in wrapper
+    obj = fun(*args, **kwargs)
+  File "src/gmailfs.py", line 1032, in __init__
+    Dirtyable.__init__(self)
+  File "src/gmailfs.py", line 901, in __init__
+    log_debug3("Dirtyable.__init__() '%s'" % (self))
+  File "src/gmailfs.py", line 228, in wrapper
+    obj = fun(*args, **kwargs)
+  File "src/gmailfs.py", line 1066, in __str__
+    if not self.ino:
+AttributeError: 'GmailInode' object has no attribute 'ino'
+   unique: 3, error: -22 (Invalid argument), outsize: 16
+unique: 4, opcode: GETATTR (3), nodeid: 1, insize: 56
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_mtime (time of most recent content modification)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    dirent = self.mk_dirent(inode, path)
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idlethread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+[-1257501808] hung on lock for 60 seconds (holder: acquired semget)
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_atime (time of most recent access)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    def link_inode(self, path, inode):
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    return self.dirent_cache[path]
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+[-1257501808] hung on lock for 120 seconds (holder: acquired semget)
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idlethread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+[-1257501808] hung on lock for 180 seconds (holder: acquired semget)
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+[-1257501808] hung on lock for 240 seconds (holder: acquired semget)
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+[-1257501808] hung on lock for 300 seconds (holder: acquired semget)
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+[-1257501808] hung on lock for 360 seconds (holder: acquired semget)
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] don[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idlee
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+[-1257501808] hung on lock for 420 seconds (holder: acquired semget)
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+threa[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idled[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+[-1257501808] hung on lock for 480 seconds (holder: acquired semget)
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] do[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idlene
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+[-1257501808] hung on lock for 540 seconds (holder: acquired semget)
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+[-1257501808] hung on lock for 600 seconds (holder: acquired semget)
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] [0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-i686/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1720, in getattr
+    #st_gid (group ID of owner)
+  File "src/gmailfs.py", line 2166, in lookup_inode
+    return inode
+  File "src/gmailfs.py", line 2512, in lookup_dirent
+    # from here.
+  File "src/gmailfs.py", line 200, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idledone
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+[-1257501808] hung on lock for 660 seconds (holder: acquired semget)
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+th[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+joining thread...
+thread[0] done
+done joining thread
+joining thread...
+thread[1] done
+done joining thread
+joining thread...
+thread[3] done
+thread[2] done
+done joining thread
+joining thread...
+done joining thread
