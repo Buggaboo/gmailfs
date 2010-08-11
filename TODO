@@ -1,4 +1,7 @@
 TODO 10-08-2010
+- okay, I found out user_xattr is not being used, it should be
+  - investigate how it can be used by this project...
+    - tagging?
 - logzilla should also use logger, branch away and hack
 - or at least write away to file
 - show dave logzilla in his own implementation
