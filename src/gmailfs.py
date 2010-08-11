@@ -2599,6 +2599,8 @@ def main(mountpoint, namedOptions):
 		# if 'allow_root' in fuse_args
 		# 	print "Please put "Please put \"user_allow_other\" ...
 		print "Please put \"user_allow_other\" by itself in your /etc/fuse.conf file as root."
+		print "Please make sure that modprobe is loaded or built into the linux kernel."
+		print "(mount_point, named_options): %s, %s" % (mountpoint, namedOptions)
 
 
 if __name__ == '__main__':

@@ -898,3 +898,18 @@ done joining thread
 joining thread...
 thread[3] done
 done joining thread
+fuse: bad mount point `/home/jasm/mnt/gmailfs-dave/': No such file or directory
+am lead thread
+mailbox now has 20 messages
+connected[0]
+connected[1]
+connected[2]
+connected[3]
+Traceback (most recent call last):
+  File "dave_hansen/gmailfs.py", line 2450, in <module>
+    main(1, "2")
+  File "dave_hansen/gmailfs.py", line 2437, in main
+    server.main()
+  File "build/bdist.linux-x86_64/egg/fuse.py", line 754, in main
+fuse.FuseError: filesystem initialization failed
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle
