@@ -205,8 +205,8 @@ def semget(sem):
 
 # TODO @ plan how to use logger as decorator function, bad idea
 # TODO + refactor log_entry as decorator, good idea,
-# TODO - redo log_entry in 22 functions in total
-# TODO - fix redirection madness
+# TODO + redo log_entry in 22 functions in total
+# TODO @ fix redirection madness => bad idea => Dave probably put them there for a reason
 def timeit(fun):
 	from time import time
 	def timed(*args, **kwargs):
@@ -219,7 +219,7 @@ def timeit(fun):
 	return timed
 
 @timeit
-def log_entry(fun):
+def logzilla(fun):
 	def wrapper(*args, **kwargs):
 		if not am_lead_thread():
 			return fun(*args, **kwargs)		
@@ -229,7 +229,6 @@ def log_entry(fun):
 		print "[%.2f] Exiting %s" % (time(), fun.func_name)
 		return obj
 	return wrapper
-
 
 # TODO - remove return statements, not necessary (test?)
 def log_error(str):
@@ -244,6 +243,10 @@ def log_debug(str):
 	#str += "\n"
 	#sys.stderr.write(str)
 	return
+
+def log_entry(str):
+	#print str
+	log_debug1(str)
 
 def am_lead_thread():
 	if writeout_threads.has_key(thread.get_ident()):
@@ -1757,6 +1760,7 @@ class Gmailfs(Fuse):
 	#@-node:getattr
 
 	#@+node:readlink
+	@logzilla
 	def readlink(self, path):
 		log_entry("readlink: path='%s'" % path)
 		dirent = self.lookup_dirent(path)
@@ -1773,6 +1777,7 @@ class Gmailfs(Fuse):
 	#@-node:readlink
 
 	#@+node:readdir
+	@logzilla
 	def readdir(self, path, offset):
 		log_entry("[%d] readdir('%s', %d)" % (thread.get_ident(), path, offset))
 		log_debug3("at top of readdir");
@@ -1852,6 +1857,7 @@ class Gmailfs(Fuse):
 		log_info("explicit flush done")
 
 	#@+node:unlink
+	@logzilla
 	def unlink(self, path):
 		log_entry("unlink called on:"+path)
 		try:
@@ -2002,6 +2008,7 @@ class Gmailfs(Fuse):
 	#@-node:rename
 	
 	#@+node:link
+	@logzilla
 	def link(self, old_path, new_path):
 		log_entry("hard link: old_path='%s', new_path='%s'" % (old_path, new_path))
 		inode = self.lookup_inode(old_path)
@@ -2015,6 +2022,7 @@ class Gmailfs(Fuse):
 	#@-node:link
 	
 	#@+node:chmod
+	@logzilla
 	def chmod(self, path, mode):
 		log_entry("chmod('%s', %o)" % (path, mode))
 		inode = self.lookup_inode(path)
@@ -2024,6 +2032,7 @@ class Gmailfs(Fuse):
 	#@-node:chmod
 
 	#@+node:chown
+	@logzilla
 	def chown(self, path, user, group):
 		log_entry("chown called with user:"+str(user)+" and group:"+str(group))
 		inode = self.lookup_inode(path)
@@ -2047,6 +2056,7 @@ class Gmailfs(Fuse):
 	#@-node:truncate
 
 	#@+node:getxattr
+	@logzilla
 	def getxattr(self, path, attr, size):
 		log_entry("getxattr('%s', '%s', '%s')" % (path, attr, size))
 		inode = self.lookup_inode(path)
@@ -2060,6 +2070,7 @@ class Gmailfs(Fuse):
 	#@-node:getxattr
 
 	#@+node:setxattr
+	@logzilla
 	def setxattr(self, path, attr, value, dunno):
 		log_entry("setxattr('%s', '%s', '%s', '%s')" % (path, attr, value, dunno))
 		inode = self.lookup_inode(path)
@@ -2069,6 +2080,7 @@ class Gmailfs(Fuse):
 	#@-node:setxattr
 
 	#@+node:removexattr
+	@logzilla
 	def removexattr(self, path, attr, value, dunno):
 		log_entry("removexattr('%s', '%s')" % (path, attr))
 		inode = self.lookup_dirent(path)/inode
@@ -2081,6 +2093,7 @@ class Gmailfs(Fuse):
 	#@-node:removexattr
 
 	#@+node:listxattr
+	@logzilla
 	def listxattr(self, path, size):
 		log_entry("listxattr('%s', '%s')" % (path, size))
 		inode = self.lookup_inode(path)
@@ -2098,6 +2111,7 @@ class Gmailfs(Fuse):
 	#@-node:listxattr
 
 	#@+node:mknod
+	@logzilla
 	def mknod(self, path, mode, dev):
 		""" Python has no os.mknod, so we can only do some things """
 		log_entry("mknod('%s')" % (path))
@@ -2148,6 +2162,7 @@ class Gmailfs(Fuse):
 		return dirent.inode
 
 	#@+node:mkdir
+	@logzilla
 	def mkdir(self, path, mode):
 		log_entry("mkdir('%s', %o)" % (path, mode))
 		if (self.lookup_dirent(path) != None):
@@ -2161,6 +2176,7 @@ class Gmailfs(Fuse):
 	#@-node:mkdir
 
 	#@+node:utime
+	@logzilla
 	def utime(self, path, times):
 		log_entry("utime for path:"+path+" times:"+str(times))
 		inode = self.lookup_inode(path)
@@ -2170,6 +2186,7 @@ class Gmailfs(Fuse):
 	#@-node:utime
 
 	#@+node:open
+	@logzilla
 	def open(self, path, flags):
 		log_entry("gmailfs.py:Gmailfs:open: %s" % path)
 		try:
@@ -2193,6 +2210,7 @@ class Gmailfs(Fuse):
 	#@-node:open
 
 	#@+node:read
+	@logzilla
 	def read(self, path, readlen, offset):
 		log_entry("read")
 		try:
@@ -2212,6 +2230,7 @@ class Gmailfs(Fuse):
 	#@-node:read
 
 	#@+node:write
+	@logzilla
 	def write(self, path, buf, off):
 		log_entry("write('%s', len:%d, off:%d)" % (path, len(buf), off))
 		try:
@@ -2229,6 +2248,7 @@ class Gmailfs(Fuse):
 	#@-node:write
 
 	#@+node:release
+	@logzilla
 	def release(self, path, flags):
 		log_entry("gmailfs.py:Gmailfs:release: %s %x" % (path, int(flags)))
 		# I saw a KeyError get thrown out of this once.  Looking back in
@@ -2276,6 +2296,7 @@ class Gmailfs(Fuse):
 
 
 	#@+node:statfs
+	@logzilla
 	def statfs(self):
 		log_entry("statfs()")
 		"""
@@ -2313,6 +2334,7 @@ class Gmailfs(Fuse):
 	#@-node:statfs
 
 	#@+node:fsync
+	@logzilla
 	def fsync(self, path, isfsyncfile):
 		log_entry("gmailfs.py:Gmailfs:fsync: path=%s, isfsyncfile=%s" % (path, isfsyncfile))
 		log_info("gmailfs.py:Gmailfs:fsync: path=%s, isfsyncfile=%s" % (path, isfsyncfile))
@@ -2325,6 +2347,7 @@ class Gmailfs(Fuse):
 	#@-node:fsync
 
 	#@+node:fsync
+	@logzilla
 	def fsyncdir(self, path, isfsyncfile):
 		log_entry("gmailfs.py:Gmailfs:fsyncdir: path=%s, isfsyncfile=%s" % (path, isfsyncfile))
 		log_info("gmailfs.py:Gmailfs:fsyncdir: path=%s, isfsyncfile=%s" % (path, isfsyncfile))
@@ -2333,6 +2356,7 @@ class Gmailfs(Fuse):
 	#@-node:fsync
 
 	#@+node:fsync
+	@logzilla
 	def flush(self, path):
 		log_entry("gmailfs.py:Gmailfs:flush: path=%s" % (path))
 		dirent = self.lookup_dirent(path)
