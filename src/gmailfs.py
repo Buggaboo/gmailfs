@@ -203,24 +203,8 @@ def semget(sem):
 	sem_msg[sem] = "acquired semget"
 	return "OK"
 
-# TODO - plan how to use logger as decorator function
-def logger(f, name=None):
-	# if logger.fhwr isn't defined and open ...
-	try:
-		if logger.fhwr:
-			pass
-	except:
-		 # ... open it
-		 logger.fhwr = open("log.txt","w")
-	if name is None:
-		name = f.func_name
-	def wrapped(*args, **kwargs):
-		logger.write("***"+name+" "+str(f)+"\n"\
-				+str(args)+str(kwargs)+"\n\n")
-		result = f(*args, **kwargs)
-		return result
-	wrapped.__doc__ = f.__doc__
-	return wrapped
+# TODO @ plan how to use logger as decorator function, bad idea
+# TODO - refactor log_entry as decorator, good idea, 22 functions in total
 
 # TODO - remove return statements, not necessary (test?)
 def log_error(str):
@@ -236,15 +220,19 @@ def log_debug(str):
 	#sys.stderr.write(str)
 	return
 
-def log_entry(str):
-	#print str
-	log_debug1(str)
+# TODO - fix redirection madness
+#def log_entry(str):
+#	#print str
+#	log_debug1(str)
+def log_entry(fun):
+	pass
 
 def am_lead_thread():
 	if writeout_threads.has_key(thread.get_ident()):
 		return 0
 	return 1
 
+# TODO - fix redirection madness, this came from log_entry
 def log_debug1(str):
 	log_info(str)
 	#str += "\n"
@@ -272,6 +260,7 @@ def log_imap(str):
 def log_imap2(str):
 	log_debug3("IMAP: " + str)
 
+# TODO - fix redirection madness, this came from log_debug1, which came from log_entry
 def log_info(s):
 	if not am_lead_thread():
 		return
