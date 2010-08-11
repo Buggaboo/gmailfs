@@ -1,4 +1,9 @@
 TODO 10-08-2010
+- logzilla should also use logger, branch away and hack
+- or at least write away to file
+- show dave logzilla in his own implementation
+  - request dave to pull
+- test whether Dave's implementation also writes to gmail nicely
 - repair FIXME with Dave Hansen (top priority)
   - FIXME, don't allow directory unlinking...
   - FIXME, using time for ino is a bad idea...
