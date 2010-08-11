@@ -204,7 +204,31 @@ def semget(sem):
 	return "OK"
 
 # TODO @ plan how to use logger as decorator function, bad idea
-# TODO - refactor log_entry as decorator, good idea, 22 functions in total
+# TODO + refactor log_entry as decorator, good idea,
+# TODO - redo log_entry in 22 functions in total
+# TODO - fix redirection madness
+def timeit(fun):
+	from time import time
+	def timed(*args, **kwargs):
+		ts = time()
+		obj = fun(*args, **kwargs)
+		te = time()
+		time_elapsed = te - ts
+		print "Time elapsed:", time_elapsed
+		return obj
+	return timed
+
+@timeit
+def log_entry(fun):
+	def wrapper(*args, **kwargs):
+		if am_lead_thread():
+			print "Entering %s with (*args, **kwargs): (%s, %s)" % (fun.func_name, str(args), str(kwargs))
+		obj = fun(*args, **kwargs)
+		if am_lead_thread():
+			print "Exiting %s" % fun.func_name
+		return obj
+	return wrapper
+
 
 # TODO - remove return statements, not necessary (test?)
 def log_error(str):
@@ -219,13 +243,6 @@ def log_debug(str):
 	#str += "\n"
 	#sys.stderr.write(str)
 	return
-
-# TODO - fix redirection madness
-#def log_entry(str):
-#	#print str
-#	log_debug1(str)
-def log_entry(fun):
-	pass
 
 def am_lead_thread():
 	if writeout_threads.has_key(thread.get_ident()):

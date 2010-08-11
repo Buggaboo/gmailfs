@@ -11,6 +11,7 @@ def timeit(fun):
 		return obj
 	return timed
 
+@timeit
 def log_entry(fun):
 	def wrapper(*args, **kwargs):
 		print "Entering %s with (*args, **kwargs): (%s, %s)" % (fun.func_name, str(args), str(kwargs))
@@ -19,7 +20,6 @@ def log_entry(fun):
 		return obj
 	return wrapper
 
-@timeit
 @log_entry
 def main(av):
 	print av
