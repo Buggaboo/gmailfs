@@ -214,18 +214,19 @@ def timeit(fun):
 		obj = fun(*args, **kwargs)
 		te = time()
 		time_elapsed = te - ts
-		print "Time elapsed:", time_elapsed
+		log.info("[%.2f] time elapsed: %.2f" % (te,time_elapsed))
 		return obj
 	return timed
 
 @timeit
 def log_entry(fun):
 	def wrapper(*args, **kwargs):
-		if am_lead_thread():
-			print "Entering %s with (*args, **kwargs): (%s, %s)" % (fun.func_name, str(args), str(kwargs))
+		if not am_lead_thread():
+			return fun(*args, **kwargs)		
+		from time import time
+		print "[%.2f] Entering %s with (*args, **kwargs): (%s, %s)" % (time(), fun.func_name, str(args), str(kwargs))
 		obj = fun(*args, **kwargs)
-		if am_lead_thread():
-			print "Exiting %s" % fun.func_name
+		print "[%.2f] Exiting %s" % (time(), fun.func_name)
 		return obj
 	return wrapper
 
