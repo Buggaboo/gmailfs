@@ -90,7 +90,6 @@ from email.mime.multipart import MIMEMultipart
 from email.MIMEText import MIMEText 
 from email.mime.base import MIMEBase
 
-
 import Queue
 from fuse import Fuse
 import os
@@ -2139,6 +2138,7 @@ class Gmailfs(Fuse):
 			return -EINVAL # TODO - figure out, why no return statement in the initial condition?
 	#@-node:mknod
 
+	@logzilla
 	def mk_dirent(self, inode, path):
 		if self.dirent_cache.has_key(path):
 			log_debug("dirent cache hit on path: '%s'" % (path))
@@ -2156,6 +2156,7 @@ class Gmailfs(Fuse):
 		self.lookup_lock.release()
 		return dirent
 
+	@logzilla
 	def mk_inode(self, mode, size, nlink=1):
 		inode = GmailInode(None, self)
 		inode.mode = int(mode)
@@ -2165,10 +2166,12 @@ class Gmailfs(Fuse):
 		self.inode_cache[inode.ino] = inode
 		return inode
 
+	@logzilla
 	def link_inode(self, path, inode):
 		dirent = self.mk_dirent(inode, path)
 		return dirent
 
+	@logzilla
 	def lookup_inode(self, path):
 		dirent = self.lookup_dirent(path)
 		if dirent == None:
@@ -2560,6 +2563,7 @@ _addLoggingHandlerHelper(defaultLoggingHandler)
 
 GmailConfig([SystemConfigFile,UserConfigFile]) # TODO - change to lowercase (confusing), this is a function.
 
+@logzilla
 def main(mountpoint, namedOptions):
 	# TODO - use optparse or pyopt
 	log_debug1("Gmailfs: starting up, pid: %d" % (os.getpid()))
@@ -2591,7 +2595,7 @@ def main(mountpoint, namedOptions):
 		log_info("unmount: flushing caches")
 		server.flush_dirent_cache()
 		imap_times_print(1)
-		log_info("done")		
+		log_info("done")
 	except fuse.FuseError, e:
 		print e
 		# TODO - put conditional here, in case 'allow_root' or was entered as a parameter to fuse python
