@@ -715,6 +715,7 @@ def _getMsguidsByQuery(about, imap, queries, or_query = 0):
 	if or_query:
 		or_str = " OR"
 	fsq = ''.join([FsNameTag , "=" , MagicStartDelim , fsNameVar , MagicEndDelim])
+	# TODO - put assert equality here between refactored string concat and old string concat
 	# this is *REALLY* sensitive, at least on gmail
 	# Don't put any extra space in it anywhere, or you
 	# will be sorry
@@ -938,7 +939,7 @@ class Dirtyable(object):
 		except:
 			log_debug("mark_dirty('%s') skipped global list, already dirty" % str(self))
 		log_debug1("mark_dirty('%s') because '%s' (%d reasons)" % \
-		(str(self), desc, self.dirty_reasons.qsize()))
+			(str(self), desc, self.dirty_reasons.qsize()))
 # end class Dirtyable
 
 #@+node:class GmailDirent
@@ -1103,8 +1104,7 @@ class GmailInode(Dirtyable):
 				e.errno = ENOSPC
 				abort()
 				raise e
-			# Uh oh.  Does this properly truncate data blocks that are no
-		# longer in use?
+			# TODO - check whether this properly truncate data blocks those are no longer in use?
 		return 0
 
 	def fill_xattrs(self):
@@ -1144,6 +1144,7 @@ class GmailInode(Dirtyable):
 		bsize = str(DefaultBlockSize)
 		symlink_str = ""
 		if self.symlink_tgt: # self.symlink_tgt != None:
+			# TODO - assert equality between refactored and old
 			symlink_str = _pathSeparatorEncode(self.symlink_tgt)
 			#body = (ModeTag  + "=" + str(self.mode)   + " " +
 				#UidTag   + "=" + str(os.getuid()) + " " +
