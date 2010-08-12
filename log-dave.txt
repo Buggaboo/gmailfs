@@ -1,915 +1,0 @@
-unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
-INIT: 7.9
-flags=0x0000003b
-max_readahead=0x00020000
-   INIT: 7.8
-   flags=0x00000001
-   max_readahead=0x00020000
-   max_write=0x00020000
-   unique: 1, error: 0 (Success), outsize: 40
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle   unique: 2, error: 0 (Success), outsize: 112
-unique: 3, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 3, error: 0 (Success), outsize: 32
-unique: 4, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 4, error: 0 (Success), outsize: 152
-unique: 5, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 5, error: 0 (Success), outsize: 16
-unique: 6, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 6, error: 0 (Success), outsize: 16
-unique: 7, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 7, error: 0 (Success), outsize: 112
-unique: 8, opcode: ACCESS (34), nodeid: 1, insize: 48
-ACCESS / 01
-   unique: 8, error: -38 (Function not implemented), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 9, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 9, error: 0 (Success), outsize: 32
-unique: 10, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 10, error: 0 (Success), outsize: 152
-unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 2
-   unique: 11, error: 0 (Success), outsize: 136
-unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 3
-   unique: 12, error: 0 (Success), outsize: 136
-unique: 13, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 13, error: 0 (Success), outsize: 16
-unique: 14, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 14, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 15, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 15, error: 0 (Success), outsize: 32
-unique: 16, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 16, error: 0 (Success), outsize: 112
-unique: 17, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 17, error: 0 (Success), outsize: 152
-unique: 18, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 18, error: 0 (Success), outsize: 16
-unique: 19, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 19, error: 0 (Success), outsize: 16
-unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 3
-   unique: 20, error: 0 (Success), outsize: 136
-unique: 21, opcode: OPEN (14), nodeid: 3, insize: 48
-   unique: 21, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /adoodledo.txt
-unique: 22, opcode: READ (15), nodeid: 3, insize: 80
-READ[0] 4096 bytes from 0
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle   READ[0] 20 bytes
-   unique: 22, error: 0 (Success), outsize: 36
-unique: 23, opcode: FLUSH (25), nodeid: 3, insize: 64
-FLUSH[0]
-   unique: 23, error: 0 (Success), outsize: 16
-unique: 24, opcode: RELEASE (18), nodeid: 3, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 24, error: 0 (Success), outsize: 16
-unique: 25, opcode: GETATTR (3), nodeid: 3, insize: 56
-   unique: 25, error: 0 (Success), outsize: 112
-unique: 26, opcode: OPEN (14), nodeid: 3, insize: 48
-   unique: 26, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /adoodledo.txt
-unique: 27, opcode: READ (15), nodeid: 3, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 20 bytes
-   unique: 27, error: 0 (Success), outsize: 36
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 28, opcode: FLUSH (25), nodeid: 3, insize: 64
-FLUSH[0]
-   unique: 28, error: 0 (Success), outsize: 16
-unique: 29, opcode: RELEASE (18), nodeid: 3, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 29, error: 0 (Success), outsize: 16
-unique: 30, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 30, error: 0 (Success), outsize: 32
-unique: 31, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 31, error: 0 (Success), outsize: 112
-unique: 32, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 32, error: 0 (Success), outsize: 152
-unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 2
-   unique: 33, error: 0 (Success), outsize: 136
-unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 3
-   unique: 34, error: 0 (Success), outsize: 136
-unique: 35, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 35, error: 0 (Success), outsize: 16
-unique: 36, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 36, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 37, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 37, error: 0 (Success), outsize: 32
-unique: 38, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 38, error: 0 (Success), outsize: 112
-unique: 39, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 39, error: 0 (Success), outsize: 152
-unique: 40, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 40, error: 0 (Success), outsize: 16
-unique: 41, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 41, error: 0 (Success), outsize: 16
-unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 2
-   unique: 42, error: 0 (Success), outsize: 136
-unique: 43, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 43, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /test.txt
-unique: 44, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 247 bytes
-   unique: 44, error: 0 (Success), outsize: 263
-unique: 45, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 45, error: 0 (Success), outsize: 16
-unique: 46, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 46, error: 0 (Success), outsize: 16
-unique: 47, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 47, error: 0 (Success), outsize: 112
-unique: 48, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 48, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /test.txt
-unique: 49, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 247 bytes
-   unique: 49, error: 0 (Success), outsize: 263
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 50, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 50, error: 0 (Success), outsize: 16
-unique: 51, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 51, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   unique: 52, error: -2 (No such file or directory), outsize: 16
-unique: 53, opcode: CREATE (35), nodeid: 1, insize: 57
-   unique: 53, error: -38 (Function not implemented), outsize: 16
-unique: 54, opcode: MKNOD (8), nodeid: 1, insize: 57
-MKNOD /dang.txt
-   NODEID: 4
-   unique: 54, error: 0 (Success), outsize: 136
-unique: 55, opcode: OPEN (14), nodeid: 4, insize: 48
-   unique: 55, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8801 /dang.txt
-unique: 56, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 56, error: 0 (Success), outsize: 16
-unique: 57, opcode: SETATTR (4), nodeid: 4, insize: 128
-   unique: 57, error: 0 (Success), outsize: 112
-unique: 58, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 58, error: 0 (Success), outsize: 16
-unique: 59, opcode: RELEASE (18), nodeid: 4, insize: 64
-RELEASE[0] flags: 0x8801
-   unique: 59, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idleunique: 60, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 60, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idleunique: 61, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 61, error: 0 (Success), outsize: 32
-unique: 62, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 62, error: 0 (Success), outsize: 184
-unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 2
-   unique: 63, error: 0 (Success), outsize: 136
-unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 4
-   unique: 64, error: 0 (Success), outsize: 136
-unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 3
-   unique: 65, error: 0 (Success), outsize: 136
-unique: 66, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 66, error: 0 (Success), outsize: 16
-unique: 67, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 67, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idleunique: 68, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 68, error: 0 (Success), outsize: 32
-unique: 69, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 69, error: 0 (Success), outsize: 112
-unique: 70, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 70, error: 0 (Success), outsize: 184
-unique: 71, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 71, error: 0 (Success), outsize: 16
-unique: 72, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 72, error: 0 (Success), outsize: 16
-unique: 73, opcode: OPEN (14), nodeid: 4, insize: 48
-   unique: 73, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8000 /dang.txt
-unique: 74, opcode: READ (15), nodeid: 4, insize: 80
-READ[0] 4096 bytes from 0
-[0 1 2 3] idle   READ[0] 0 bytes
-   unique: 74, error: 0 (Success), outsize: 16
-unique: 75, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 75, error: 0 (Success), outsize: 16
-unique: 76, opcode: RELEASE (18), nodeid: 4, insize: 64
-RELEASE[0] flags: 0x8000
-   unique: 76, error: 0 (Success), outsize: 16
-unique: 77, opcode: GETATTR (3), nodeid: 4, insize: 56
-   unique: 77, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 78, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 78, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 4
-   unique: 79, error: 0 (Success), outsize: 136
-unique: 80, opcode: SETATTR (4), nodeid: 4, insize: 128
-   unique: 80, error: 0 (Success), outsize: 112
-unique: 81, opcode: OPEN (14), nodeid: 4, insize: 48
-   unique: 81, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8001 /dang.txt
-unique: 82, opcode: GETXATTR (22), nodeid: 4, insize: 68
-   unique: 82, error: -61 (No data available), outsize: 16
-unique: 83, opcode: WRITE (16), nodeid: 4, insize: 122
-WRITE[0] 58 bytes to 0
-   WRITE[0] 58 bytes
-   unique: 83, error: 0 (Success), outsize: 24
-unique: 84, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 84, error: 0 (Success), outsize: 16
-unique: 85, opcode: RELEASE (18), nodeid: 4, insize: 64
-RELEASE[0] flags: 0x8001
-   unique: 85, error: 0 (Success), outsize: 16
-unique: 86, opcode: GETATTR (3), nodeid: 4, insize: 56
-   unique: 86, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 87, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 87, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 88, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 88, error: 0 (Success), outsize: 32
-unique: 89, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 89, error: 0 (Success), outsize: 112
-unique: 90, opcode: READDIR (28), nodeid: 1, insize: 80
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle   unique: 90, error: 0 (Success), outsize: 184
-unique: 91, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 91, error: 0 (Success), outsize: 16
-unique: 92, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 92, error: 0 (Success), outsize: 16
-unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 4
-   unique: 93, error: 0 (Success), outsize: 136
-[0 1 2 3] idleunique: 94, opcode: OPEN (14), nodeid: 4, insize: 48
-   unique: 94, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8401 /dang.txt
-unique: 95, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 95, error: 0 (Success), outsize: 16
-unique: 96, opcode: GETXATTR (22), nodeid: 4, insize: 68
-   unique: 96, error: -61 (No data available), outsize: 16
-unique: 97, opcode: WRITE (16), nodeid: 4, insize: 94
-WRITE[0] 30 bytes to 58
-   WRITE[0] 30 bytes
-   unique: 97, error: 0 (Success), outsize: 24
-unique: 98, opcode: FLUSH (25), nodeid: 4, insize: 64
-FLUSH[0]
-   unique: 98, error: 0 (Success), outsize: 16
-unique: 99, opcode: RELEASE (18), nodeid: 4, insize: 64
-RELEASE[0] flags: 0x8401
-   unique: 99, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 100, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 100, error: 0 (Success), outsize: 32
-unique: 101, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 101, error: 0 (Success), outsize: 112
-unique: 102, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 102, error: 0 (Success), outsize: 184
-unique: 103, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 2
-   unique: 103, error: 0 (Success), outsize: 136
-unique: 104, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 4
-   unique: 104, error: 0 (Success), outsize: 136
-unique: 105, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 3
-   unique: 105, error: 0 (Success), outsize: 136
-unique: 106, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 106, error: 0 (Success), outsize: 16
-unique: 107, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 107, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleam lead thread
-mailbox now has 16 messages
-connected[0]
-connected[1]
-connected[2]
-connected[3]
-populate_buffer() filled block 0 with len: 20
-[1] ( 0 sec), wrote out dirent('/dang.txt' ino=83987335610368) because 'mk_dirent (1 more reasons hidden)' 0 left
-[3] ( 0 sec), wrote out inode(83987335610368) because 'new inode (1 more reasons hidden)' 0 left
-on last block, so only writing out 58/524288 bytes of block
-[0] ( 0 sec), wrote out block(0) because 'file write (1 more reasons hidden)' 1 left
-[2] ( 0 sec), wrote out inode(83987335610368) because 'file write extend (1 more reasons hidden)' 1 left
-[2] ( 0 sec), wrote out inode(83987335610368) because 'commit data block (1 more reasons hidden)' 0 left
-on last block, so only writing out 88/524288 bytes of block
-[0] ( 0 sec), wrote out block(0) because 'file write (1 more reasons hidden)' 1 left
-[3] ( 0 sec), wrote out inode(83987335610368) because 'file write extend (1 more reasons hidden)' 1 left
-[3] ( 0 sec), wrote out inode(83987335610368) because 'commit data block (1 more reasons hidden)' 0 left
-joining thread...
-thread[0] done
-done joining thread
-joining thread...
-thread[2] done
-thread[1] done
-done joining thread
-joining thread...
-done joining thread
-joining thread...
-thread[3] done
-done joining thread
-unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
-INIT: 7.9
-flags=0x0000003b
-max_readahead=0x00020000
-   INIT: 7.8
-   flags=0x00000001
-   max_readahead=0x00020000
-   max_write=0x00020000
-   unique: 1, error: 0 (Success), outsize: 40
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 2, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 3, error: 0 (Success), outsize: 112
-[0 1 2 3] idleunique: 4, opcode: ACCESS (34), nodeid: 1, insize: 48
-ACCESS / 01
-   unique: 4, error: -38 (Function not implemented), outsize: 16
-unique: 5, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 5, error: 0 (Success), outsize: 32
-unique: 6, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 6, error: 0 (Success), outsize: 184
-unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 7, error: 0 (Success), outsize: 136
-unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 3
-   unique: 8, error: 0 (Success), outsize: 136
-unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 4
-   unique: 9, error: 0 (Success), outsize: 136
-unique: 10, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 10, error: 0 (Success), outsize: 16
-unique: 11, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 11, error: 0 (Success), outsize: 16
-[0 1 2 3] idleunique: 12, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 12, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 13, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 13, error: 0 (Success), outsize: 32
-unique: 14, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 14, error: 0 (Success), outsize: 112
-unique: 15, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 15, error: 0 (Success), outsize: 184
-unique: 16, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 16, error: 0 (Success), outsize: 16
-unique: 17, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 17, error: 0 (Success), outsize: 16
-unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 18, error: 0 (Success), outsize: 136
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 19, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 19, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8000 /dang.txt
-unique: 20, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 88 bytes
-   unique: 20, error: 0 (Success), outsize: 104
-unique: 21, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 21, error: 0 (Success), outsize: 112
-unique: 22, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 22, error: 0 (Success), outsize: 16
-unique: 23, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x8000
-   unique: 23, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 24, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 24, error: 0 (Success), outsize: 112
-unique: 25, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 25, error: 0 (Success), outsize: 32
-unique: 26, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 26, error: 0 (Success), outsize: 184
-unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 27, error: 0 (Success), outsize: 136
-unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 3
-   unique: 28, error: 0 (Success), outsize: 136
-unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 4
-   unique: 29, error: 0 (Success), outsize: 136
-unique: 30, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 30, error: 0 (Success), outsize: 16
-unique: 31, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 31, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 32, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 32, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 33, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 33, error: 0 (Success), outsize: 32
-unique: 34, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 34, error: 0 (Success), outsize: 112
-unique: 35, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 35, error: 0 (Success), outsize: 184
-unique: 36, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 36, error: 0 (Success), outsize: 16
-unique: 37, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 37, error: 0 (Success), outsize: 16
-unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 38, error: 0 (Success), outsize: 136
-unique: 39, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 39, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8000 /dang.txt
-unique: 40, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 88 bytes
-   unique: 40, error: 0 (Success), outsize: 104
-unique: 41, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 41, error: 0 (Success), outsize: 112
-unique: 42, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 42, error: 0 (Success), outsize: 16
-unique: 43, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x8000
-   unique: 43, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 44, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 44, error: 0 (Success), outsize: 32
-unique: 45, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 45, error: 0 (Success), outsize: 112
-unique: 46, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 46, error: 0 (Success), outsize: 184
-unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 47, error: 0 (Success), outsize: 136
-unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 3
-   unique: 48, error: 0 (Success), outsize: 136
-unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 4
-   unique: 49, error: 0 (Success), outsize: 136
-unique: 50, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 50, error: 0 (Success), outsize: 16
-unique: 51, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 51, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 52, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 52, error: 0 (Success), outsize: 32
-unique: 53, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 53, error: 0 (Success), outsize: 112
-unique: 54, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 54, error: 0 (Success), outsize: 184
-unique: 55, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 55, error: 0 (Success), outsize: 16
-unique: 56, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 56, error: 0 (Success), outsize: 16
-unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 57, error: 0 (Success), outsize: 136
-unique: 58, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 58, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 59, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 88 bytes
-   unique: 59, error: 0 (Success), outsize: 104
-unique: 60, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 60, error: 0 (Success), outsize: 16
-unique: 61, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-unique: 62, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 62, error: 0 (Success), outsize: 112
-unique: 63, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 63, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 64, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 88 bytes
-   unique: 64, error: 0 (Success), outsize: 104
-[0 1 2 3] idle   unique: 61, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 65, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 65, error: 0 (Success), outsize: 16
-unique: 66, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 66, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 67, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 67, error: 0 (Success), outsize: 32
-unique: 68, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 68, error: 0 (Success), outsize: 112
-unique: 69, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 69, error: 0 (Success), outsize: 184
-unique: 70, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 70, error: 0 (Success), outsize: 16
-unique: 71, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 71, error: 0 (Success), outsize: 16
-unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 72, error: 0 (Success), outsize: 136
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 73, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 73, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8401 /dang.txt
-unique: 74, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 74, error: 0 (Success), outsize: 16
-unique: 75, opcode: GETXATTR (22), nodeid: 2, insize: 68
-   unique: 75, error: -61 (No data available), outsize: 16
-unique: 76, opcode: WRITE (16), nodeid: 2, insize: 94
-WRITE[0] 30 bytes to 88
-   WRITE[0] 30 bytes
-   unique: 76, error: 0 (Success), outsize: 24
-unique: 77, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 77, error: 0 (Success), outsize: 16
-unique: 78, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x8401
-   unique: 78, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 79, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 79, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleam lead thread
-mailbox now has 19 messages
-connected[0]
-connected[2]
-connected[3]
-connected[1]
-on last block, so only writing out 118/524288 bytes of block
-[0] ( 1 sec), wrote out block(0) because 'file write (1 more reasons hidden)' 1 left
-[1] ( 1 sec), wrote out inode(83987335610368) because 'file write extend (1 more reasons hidden)' 1 left
-[1] ( 0 sec), wrote out inode(83987335610368) because 'commit data block (1 more reasons hidden)' 0 left
-joining thread...
-thread[0] done
-done joining thread
-joining thread...
-thread[3] done
-thread[2] done
-thread[1] done
-done joining thread
-joining thread...
-done joining thread
-joining thread...
-done joining thread
-unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
-INIT: 7.9
-flags=0x0000003b
-max_readahead=0x00020000
-   INIT: 7.8
-   flags=0x00000001
-   max_readahead=0x00020000
-   max_write=0x00020000
-   unique: 1, error: 0 (Success), outsize: 40
-unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 2, error: 0 (Success), outsize: 112
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 3, error: 0 (Success), outsize: 112
-unique: 4, opcode: ACCESS (34), nodeid: 1, insize: 48
-ACCESS / 00
-   unique: 4, error: -38 (Function not implemented), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 5, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 5, error: 0 (Success), outsize: 32
-unique: 6, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 6, error: 0 (Success), outsize: 184
-unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 7, error: 0 (Success), outsize: 136
-unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /test.txt
-   NODEID: 3
-   unique: 8, error: 0 (Success), outsize: 136
-unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 54
-LOOKUP /adoodledo.txt
-   NODEID: 4
-   unique: 9, error: 0 (Success), outsize: 136
-unique: 10, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 10, error: 0 (Success), outsize: 16
-unique: 11, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 11, error: 0 (Success), outsize: 16
-unique: 12, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 12, error: 0 (Success), outsize: 112
-unique: 13, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 13, error: 0 (Success), outsize: 32
-unique: 14, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 14, error: 0 (Success), outsize: 184
-unique: 15, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 15, error: 0 (Success), outsize: 16
-unique: 16, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 16, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 17, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 17, error: 0 (Success), outsize: 32
-unique: 18, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 18, error: 0 (Success), outsize: 112
-unique: 19, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 19, error: 0 (Success), outsize: 184
-unique: 20, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 20, error: 0 (Success), outsize: 16
-unique: 21, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 21, error: 0 (Success), outsize: 16
-unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 22, error: 0 (Success), outsize: 136
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 23, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 23, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x8000 /dang.txt
-unique: 24, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 24, error: 0 (Success), outsize: 134
-unique: 25, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 25, error: 0 (Success), outsize: 112
-unique: 26, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 26, error: 0 (Success), outsize: 16
-unique: 27, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x8000
-   unique: 27, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 28, opcode: OPENDIR (27), nodeid: 1, insize: 48
-   unique: 28, error: 0 (Success), outsize: 32
-unique: 29, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 29, error: 0 (Success), outsize: 112
-unique: 30, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 30, error: 0 (Success), outsize: 184
-unique: 31, opcode: READDIR (28), nodeid: 1, insize: 80
-   unique: 31, error: 0 (Success), outsize: 16
-unique: 32, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
-   unique: 32, error: 0 (Success), outsize: 16
-unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 33, error: 0 (Success), outsize: 136
-unique: 34, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 34, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 35, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 35, error: 0 (Success), outsize: 134
-unique: 36, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 36, error: 0 (Success), outsize: 16
-unique: 37, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 37, error: 0 (Success), outsize: 16
-unique: 38, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 38, error: 0 (Success), outsize: 112
-unique: 39, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 39, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 40, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 40, error: 0 (Success), outsize: 134
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 41, opcode: GETATTR (3), nodeid: 1, insize: 56
-   unique: 41, error: 0 (Success), outsize: 112
-unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 55
-LOOKUP /Elvis messages
-   unique: 42, error: -2 (No such file or directory), outsize: 16
-unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 55
-LOOKUP /Elvis messages
-   unique: 43, error: -2 (No such file or directory), outsize: 16
-unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 62
-LOOKUP /Elvis default options
-   unique: 44, error: -2 (No such file or directory), outsize: 16
-unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 57
-LOOKUP /Elvis ex history
-   unique: 45, error: -2 (No such file or directory), outsize: 16
-unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 57
-LOOKUP /Elvis error list
-   unique: 46, error: -2 (No such file or directory), outsize: 16
-unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis initialization
-   unique: 47, error: -2 (No such file or directory), outsize: 16
-unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis initialization
-   unique: 48, error: -2 (No such file or directory), outsize: 16
-unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 49, error: -2 (No such file or directory), outsize: 16
-unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.lat"))
-   unique: 50, error: -2 (No such file or directory), outsize: 16
-unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.lat"))
-   unique: 51, error: -2 (No such file or directory), outsize: 16
-unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 59
-LOOKUP /Elvis untitled #-1
-   unique: 52, error: -2 (No such file or directory), outsize: 16
-unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.spe"))
-   unique: 53, error: -2 (No such file or directory), outsize: 16
-unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.spe"))
-   unique: 54, error: -2 (No such file or directory), outsize: 16
-unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 59
-LOOKUP /Elvis untitled #-2
-   unique: 55, error: -2 (No such file or directory), outsize: 16
-unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 43
-LOOKUP /("
-   unique: 56, error: -2 (No such file or directory), outsize: 16
-unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 43
-LOOKUP /("
-   unique: 57, error: -2 (No such file or directory), outsize: 16
-unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.ali"))
-   unique: 58, error: -2 (No such file or directory), outsize: 16
-unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.ali"))
-   unique: 59, error: -2 (No such file or directory), outsize: 16
-unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 59
-LOOKUP /Elvis untitled #-3
-   unique: 60, error: -2 (No such file or directory), outsize: 16
-unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.clr"))
-   unique: 61, error: -2 (No such file or directory), outsize: 16
-unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 65
-LOOKUP /(elvispath("elvis.clr"))
-   unique: 62, error: -2 (No such file or directory), outsize: 16
-unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 59
-LOOKUP /Elvis untitled #-4
-   unique: 63, error: -2 (No such file or directory), outsize: 16
-unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 53
-LOOKUP /(exists(home
-   unique: 64, error: -2 (No such file or directory), outsize: 16
-unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 53
-LOOKUP /(exists(home
-   unique: 65, error: -2 (No such file or directory), outsize: 16
-unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 55
-LOOKUP /Elvis messages
-   unique: 66, error: -2 (No such file or directory), outsize: 16
-unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 55
-LOOKUP /Elvis messages
-   unique: 67, error: -2 (No such file or directory), outsize: 16
-unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 55
-LOOKUP /Elvis messages
-   unique: 68, error: -2 (No such file or directory), outsize: 16
-unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 69, error: -2 (No such file or directory), outsize: 16
-unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis before reading
-   unique: 70, error: -2 (No such file or directory), outsize: 16
-unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis before reading
-   unique: 71, error: -2 (No such file or directory), outsize: 16
-unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 72, error: -2 (No such file or directory), outsize: 16
-unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 60
-LOOKUP /Elvis after reading
-   unique: 73, error: -2 (No such file or directory), outsize: 16
-unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 60
-LOOKUP /Elvis after reading
-   unique: 74, error: -2 (No such file or directory), outsize: 16
-unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 75, error: -2 (No such file or directory), outsize: 16
-unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis before writing
-   unique: 76, error: -2 (No such file or directory), outsize: 16
-unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis before writing
-   unique: 77, error: -2 (No such file or directory), outsize: 16
-unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 78, error: -2 (No such file or directory), outsize: 16
-unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 60
-LOOKUP /Elvis after writing
-   unique: 79, error: -2 (No such file or directory), outsize: 16
-unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 60
-LOOKUP /Elvis after writing
-   unique: 80, error: -2 (No such file or directory), outsize: 16
-unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 81, error: -2 (No such file or directory), outsize: 16
-unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 82, error: 0 (Success), outsize: 136
-unique: 83, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 83, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 84, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 84, error: 0 (Success), outsize: 134
-unique: 85, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 85, error: 0 (Success), outsize: 16
-unique: 87, opcode: GETATTR (3), nodeid: 2, insize: 56
-unique: 86, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 87, error: 0 (Success), outsize: 112
-unique: 88, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 86, error: 0 (Success), outsize: 16
-   unique: 88, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 89, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 89, error: 0 (Success), outsize: 134
-unique: 90, opcode: GETATTR (3), nodeid: 2, insize: 56
-   unique: 90, error: 0 (Success), outsize: 112
-unique: 91, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 91, error: 0 (Success), outsize: 16
-unique: 92, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 60
-LOOKUP /Elvis message queue
-   unique: 92, error: 0 (Success), outsize: 16
-   unique: 93, error: -2 (No such file or directory), outsize: 16
-unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 45
-LOOKUP /tags
-   unique: 94, error: -2 (No such file or directory), outsize: 16
-unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 68
-LOOKUP /Elvis custom initialization
-   unique: 95, error: -2 (No such file or directory), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 61
-LOOKUP /Elvis previous input
-   unique: 96, error: -2 (No such file or directory), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 97, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 97, error: 0 (Success), outsize: 16
-unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 49
-LOOKUP /dang.txt
-   NODEID: 2
-   unique: 98, error: 0 (Success), outsize: 136
-unique: 99, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 99, error: 0 (Success), outsize: 16
-unique: 100, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-unique: 101, opcode: OPEN (14), nodeid: 2, insize: 48
-   unique: 100, error: 0 (Success), outsize: 16
-   unique: 101, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 102, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-[0 1 2 3] idle[0 1 2 3] idle   READ[0] 118 bytes
-   unique: 102, error: 0 (Success), outsize: 134
-unique: 103, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 103, error: 0 (Success), outsize: 16
-unique: 104, opcode: RELEASE (18), nodeid: 2, insize: 64
-unique: 105, opcode: GETATTR (3), nodeid: 2, insize: 56
-RELEASE[0] flags: 0x0
-   unique: 104, error: 0 (Success), outsize: 16
-   unique: 105, error: 0 (Success), outsize: 112
-unique: 106, opcode: OPEN (14), nodeid: 2, insize: 48
-[0 1 2 3] idle[0 1 2 3] idle   unique: 106, error: 0 (Success), outsize: 32
-OPEN[0] flags: 0x0 /dang.txt
-unique: 107, opcode: READ (15), nodeid: 2, insize: 80
-READ[0] 4096 bytes from 0
-   READ[0] 118 bytes
-   unique: 107, error: 0 (Success), outsize: 134
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 108, opcode: FLUSH (25), nodeid: 2, insize: 64
-FLUSH[0]
-   unique: 108, error: 0 (Success), outsize: 16
-unique: 109, opcode: RELEASE (18), nodeid: 2, insize: 64
-RELEASE[0] flags: 0x0
-   unique: 109, error: 0 (Success), outsize: 16
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleam lead thread
-mailbox now has 20 messages
-connected[2]
-connected[0]
-connected[1]
-connected[3]
-joining thread...
-thread[0] done
-done joining thread
-joining thread...
-thread[2] done
-thread[1] done
-done joining thread
-joining thread...
-done joining thread
-joining thread...
-thread[3] done
-done joining thread
-fuse: bad mount point `/home/jasm/mnt/gmailfs-dave/': No such file or directory
-am lead thread
-mailbox now has 20 messages
-connected[0]
-connected[1]
-connected[2]
-connected[3]
-Traceback (most recent call last):
-  File "dave_hansen/gmailfs.py", line 2450, in <module>
-    main(1, "2")
-  File "dave_hansen/gmailfs.py", line 2437, in main
-    server.main()
-  File "build/bdist.linux-x86_64/egg/fuse.py", line 754, in main
-fuse.FuseError: filesystem initialization failed
-[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle

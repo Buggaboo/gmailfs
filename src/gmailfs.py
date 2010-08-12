@@ -699,7 +699,7 @@ def fixQuotedPrintable(body):
 	newline = body.find("\r\n\r\n")
 	if newline >= 0:
 		body = body[newline:]
-		fixed = body
+	fixed = body
 	if re.search("Content-Transfer-Encoding: quoted",body):
 		fixed = quopri.decodestring(body)
 	# Map unicode	 
