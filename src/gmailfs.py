@@ -686,10 +686,10 @@ class reference_class:
 			self.username = DefaultUsername
 		else:
 			self.username = username
-			if not password: # NOTE: see 'not username' password is None or password == '':
-				self.password = DefaultPassword
-			else:
-				self.password = password
+		if not password: # NOTE: see 'not username' password is None or password == '':
+			self.password = DefaultPassword
+		else:
+			self.password = password
 
 # This ensures backwards compatability where
 # old filesystems were stored with 7bit encodings
