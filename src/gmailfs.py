@@ -587,11 +587,13 @@ def GmailConfig(fname):
 do_writeout = 1
 #@+node:mythread
 class testthread(Thread):
+	@logzilla
 	def __init__ (self, fs, nr):
 		Thread.__init__(self)
 		self.fs = fs
 		self.nr = nr
 
+	@logzilla
 	def write_out_object(self):
 		try:
 			# block, and timeout after 1 second
@@ -624,6 +626,7 @@ class testthread(Thread):
 			print(msg % ("did not write"));
 		return 1
 
+	@logzilla
 	def run_writeout(self):
 		"""
 		WARNING: strings in python are immutable, concatenations like this are quadratic in memory usage."""
@@ -666,6 +669,7 @@ class testthread(Thread):
 
 			time.sleep(1)
 
+	@logzilla
 	def run(self):
 		global do_writeout
 		writeout_threads[thread.get_ident()] = 1
