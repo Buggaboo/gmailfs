@@ -953,7 +953,10 @@ class GmailDirent(Dirtyable):
 	#def to_str(self):
 	@logzilla
 	def __str__(self):
-		return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
+		try:
+			return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
+		except:
+			return "Self.inode.ino has not been initialized yet"
 
 	def path(self):
 		d = self.fs.parse_dirent_msg(self.dirent_msg)

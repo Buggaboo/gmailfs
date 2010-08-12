@@ -1021,3 +1021,1015 @@ joining thread...
 thread[3] done
 done joining thread
 [1281595141.61] Exiting main
+  41:20.37 imaplib version 2.58
+  41:20.37 new IMAP4 connection, tag=OHGJ
+  41:20.40 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:20.75 imaplib version 2.58
+  41:20.75 new IMAP4 connection, tag=DHKA
+  41:20.78 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:21.09 imaplib version 2.58
+  41:21.09 new IMAP4 connection, tag=MNFO
+  41:21.12 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:21.41 imaplib version 2.58
+  41:21.41 new IMAP4 connection, tag=GOJE
+  41:21.43 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:21.70 imaplib version 2.58
+  41:21.70 new IMAP4 connection, tag=LCNC
+  41:21.71 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  41:39.43 imaplib version 2.58
+  41:39.43 new IMAP4 connection, tag=KIAA
+  41:39.46 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:39.79 imaplib version 2.58
+  41:39.79 new IMAP4 connection, tag=PIPJ
+  41:39.81 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:40.12 imaplib version 2.58
+  41:40.12 new IMAP4 connection, tag=PPGB
+  41:40.15 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:40.49 imaplib version 2.58
+  41:40.49 new IMAP4 connection, tag=GFCN
+  41:40.51 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  41:40.81 imaplib version 2.58
+  41:40.81 new IMAP4 connection, tag=IJGF
+  41:40.85 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleVersion: 0.2. This fuse python version is supported.
+[1281595299.33] time elapsed: 0.0000050068
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000059605
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000391006
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000028610
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000021458
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000028610
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.33] time elapsed: 0.0000019073
+[1281595299.33] time elapsed: 0.0000030994
+[1281595299.34] time elapsed: 0.0000050068
+[1281595299.34] Entering main with (*args, **kwargs): 
+	((1, '2'), {})
+am lead thread
+mailbox now has 20 messages
+connected[0]
+connected[1]
+connected[2]
+connected[3]
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[2] done
+ thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] do[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleunique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idlene
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+[1281595344.97] Entering lookup_inode with (*args, **kwargs): 
+	((<__main__.Gmailfs object at 0xa2bfd0>, '/'), {})
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+[1281595345.73] Entering __init__ with (*args, **kwargs): 
+	((<__main__.GmailInode object at 0xad8b50>, <email.message.Message instance at 0xadf7a0>, <__main__.Gmailfs object at 0xa2bfd0>), {})
+[1281595345.73] Entering __str__ with (*args, **kwargs): 
+	((<__main__.GmailInode object at 0xad8b50>,), {})
+[1281595345.73] Exiting __str__
+[1281595345.73] Entering fill_from_inode_msg with (*args, **kwargs): 
+	((<__main__.GmailInode object at 0xad8b50>,), {})
+[1281595345.73] Exiting fill_from_inode_msg
+[1281595345.73] Exiting __init__
+[1281595345.73] Entering __str__ with (*args, **kwargs): 
+	((<__main__.GmailDirent object at 0xad8d50>,), {})
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/fuse.py", line 361, in __call__
+  File "src/gmailfs.py", line 1726, in getattr
+    inode = self.lookup_inode(path)
+  File "src/gmailfs.py", line 227, in wrapper
+    obj = fun(*args, **kwargs)
+  File "src/gmailfs.py", line 2176, in lookup_inode
+    dirent = self.lookup_dirent(path)
+  File "src/gmailfs.py", line 2539, in lookup_dirent
+    new_dirent = GmailDirent(dirent_msg, inode, self)
+  File "src/gmailfs.py", line 947, in __init__
+    Dirtyable.__init__(self)
+  File "src/gmailfs.py", line 900, in __init__
+    log_debug3("Dirtyable.__init__() '%s'" % (self))
+  File "src/gmailfs.py", line 227, in wrapper
+    obj = fun(*args, **kwargs)
+  File "src/gmailfs.py", line 956, in __str__
+    return "dirent('%s' ino=%s)" % (self.path(), str(self.inode.ino))
+  File "src/gmailfs.py", line 959, in path
+    d = self.fs.parse_dirent_msg(self.dirent_msg)
+AttributeError: 'GmailDirent' object has no attribute 'fs'
+   unique: 2, error: -22 (Invalid argument), outsize: 16
+unique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  File "build/bdist.linux-x86_64/egg/fuse.py", line 361, in __call__
+    return apply(self.func, args, kw)
+  File "src/gmailfs.py", line 1726, in getattr
+    inode = self.lookup_inode(path)
+  File "src/gmailfs.py", line 227, in wrapper
+    obj = fun(*args, **kwargs)
+  File "src/gmailfs.py", line 2176, in lookup_inode
+    dirent = self.lookup_dirent(path)
+  File "src/gmailfs.py", line 2522, in lookup_dirent
+    semget(self.lookup_lock)
+  File "src/gmailfs.py", line 199, in semget
+    traceback.print_stack()
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[1281595345.74] Entering lookup_inode with (*args, **kwargs): 
+	((<__main__.Gmailfs object at 0xa2bfd0>, '/'), {})
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+[139762004023056] hung on lock for 60 seconds (holder: acquired semget)
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1][0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[0] done
+thread[2] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+joining thread...
+thread[1] done
+thread[2] done
+thread[0] done
+done joining thread
+joining thread...
+done joining thread
+joining thread...
+done joining thread
+joining thread...
+thread[3] done
+done joining thread
+[1281595459.16] Exiting main
+  44:21.79 imaplib version 2.58
+  44:21.79 new IMAP4 connection, tag=ICKO
+  44:21.82 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  44:22.27 imaplib version 2.58
+  44:22.27 new IMAP4 connection, tag=CDEP
+  44:22.29 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  44:22.56 imaplib version 2.58
+  44:22.56 new IMAP4 connection, tag=LAMA
+  44:22.57 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  44:22.83 imaplib version 2.58
+  44:22.83 new IMAP4 connection, tag=ICKD
+  44:22.85 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  44:23.15 imaplib version 2.58
+  44:23.15 new IMAP4 connection, tag=BILH
+  44:23.18 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idleVersion: 0.2. This fuse python version is supported.
+[1281595461.66] time elapsed: 0.0000059605
+[1281595461.67] time elapsed: 0.0000028610
+[1281595461.67] time elapsed: 0.0000040531
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000028610
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000081062
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000028610
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000028610
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000030994
+[1281595461.67] time elapsed: 0.0000021458
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000019073
+[1281595461.67] time elapsed: 0.0000071526
+[1281595461.67] Entering main with (*args, **kwargs): 
+	((1, '2'), {})
+am lead thread
+mailbox now has 20 messages
+connected[0]
+connected[1]
+connected[2]
+connected[3]
+filesystem initialization failed
+Please put "user_allow_other" by itself in your /etc/fuse.conf file as root.
+Please make sure that modprobe is loaded or built into the linux kernel.
+(mount_point, named_options): 1, 2
+[1281595463.46] Exiting main
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[3] done
+thread[2] done
+thread[1] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[1] done
+thread[3] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[0] done
+thread[3] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[1] done
+thread[0] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[1] done
+thread[2] done
+thread[3] done
+thread[0] done
+thread[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle  46:16.03 imaplib version 2.58
+  46:16.03 new IMAP4 connection, tag=BMGO
+  46:16.06 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  46:16.40 imaplib version 2.58
+  46:16.40 new IMAP4 connection, tag=CNKA
+  46:16.43 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  46:16.73 imaplib version 2.58
+  46:16.73 new IMAP4 connection, tag=OPKA
+  46:16.76 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  46:17.07 imaplib version 2.58
+  46:17.07 new IMAP4 connection, tag=JHGM
+  46:17.10 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+  46:17.41 imaplib version 2.58
+  46:17.41 new IMAP4 connection, tag=MAJG
+  46:17.44 CAPABILITIES: ('IMAP4REV1', 'UNSELECT', 'IDLE', 'NAMESPACE', 'QUOTA', 'XLIST', 'CHILDREN', 'XYZZY', 'SASL-IR', 'AUTH=XOAUTH')
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle[0 1 2 3] idle
