@@ -95,16 +95,13 @@ import Queue
 from fuse import Fuse
 import os
 from threading import Thread
-import threading
-import thread
+#import threading
 from errno import *
 from stat import *
 from os.path import abspath, expanduser, isfile
 
 fuse.fuse_python_api = (0, 2)
 
-
-import thread
 import quopri
 
 import sys,traceback,re,string,time,tempfile,array,logging,logging.handlers
@@ -249,6 +246,7 @@ def log_entry(str):
 	log_debug1(str)
 
 def am_lead_thread():
+	import thread
 	if writeout_threads.has_key(thread.get_ident()):
 		return 0
 	return 1
@@ -318,8 +316,8 @@ def msg_add_payload(msg, payload, filename=None):
 # This probably doesn't need to be handed the fsNameVar
 # and the username
 def mkmsg(subject, preamble, attach = ""):
-	global username
-	global fsNameVar
+	global username # NOTE: necessary? I don't think so. Member variable envy. Code smell.
+	global fsNameVar # NOTE: see previous note.
 	msg = MIMEMultipart()
 	log_debug2("mkmsg('%s', '%s', '%s', '%s',...)" % (username, fsNameVar, subject, preamble)) # TODO - replace with tuple(*args)
 	msg['Subject'] = subject
@@ -493,7 +491,7 @@ def imap_trash_uids(imap, raw_uids):
 
 	if len(checked_uids) == 0:
 		return
-	log_imap("imap_trash_uids(%s)" % (string.join(checked_uids,",")))
+	log_imap("imap_trash_uids(%s)" % string.join(checked_uids,","))
 	ret = uid_cmd(imap, "STORE", checked_uids, '+FLAGS', '\\Deleted')
 	global msg_cache
 	for uid in checked_uids:
@@ -632,11 +630,13 @@ class testthread(Thread):
 		"""
 		WARNING: strings in python are immutable, concatenations like this are quadratic in memory usage."""
 		tries = 5
+		import thread
 		for try_nr in range(tries):
 			writeout_threads[thread.get_ident()] = "running"
 			ret = self.write_out_object()
 			#rint("writeout ret: '%s'" % (ret))
 			if ret == 0:
+				import thread
 				writeout_threads[thread.get_ident()] = "idle"
 				#msg = "["
 				#for t in range(self.fs.nr_imap_threads):
@@ -673,6 +673,7 @@ class testthread(Thread):
 	@logzilla
 	def run(self):
 		global do_writeout
+		import thread
 		writeout_threads[thread.get_ident()] = 1
 		log_debug1("mythread: started pid: %d" % (os.getpid()))
 		print "connected[%d]" % (self.nr)
@@ -906,6 +907,7 @@ class Dirtyable(object):
 		log_debug3("Dirtyable.__init__() '%s'" % (self))
 		self.dirty_reasons = Queue.Queue(1<<20)
 		self.dirty_mark = Queue.Queue(1)
+		import thread
 		self.writeout_lock = thread.allocate_lock()
 		sem_msg[self.writeout_lock] = "brand spankin new"
 
@@ -929,7 +931,7 @@ class Dirtyable(object):
 			d_msg = self.dirty_reasons.get_nowait()
 			log_info("dirty reason[%d]: %s" % (msg_nr, d_msg))
 			msgs.append(d_msg)
-		msg = "(%s)" % string.join(msgs, ", ")
+		msg = "(%s)" % string.join(msgs, ", ") # TODO - equivalent? ===> ', '.join(msgs)
 		# there's a race to do this twice
 		orig_reason = self.dirty_mark.get_nowait();
 		log_info("cleared original dirty reason: '%s'" % (orig_reason))
@@ -1045,6 +1047,7 @@ class GmailInode(Dirtyable):
 		self.fs = fs
 		self.xattr = {}
 		self.i_blocks = {}
+		import thread
 		self.inode_cache_lock = thread.allocate_lock()
 		# protected by fs.inode_cache_lock
 		self.pinned = 0
@@ -1138,13 +1141,13 @@ class GmailInode(Dirtyable):
 		 #FsNameTag		+ "=" + MagicStartDelim + fsNameVar +MagicEndDelim +
 		 #"")
 		# linear time string concatenation, I have no idea if this is worth it... what the hey
-		subject = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+		subject = ''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
 				InodeSubjectPrefix, " " ,
 				VersionTag	 , "=" , GMAILFS_VERSION, " " ,
 				InodeTag		 , "=" , str(self.ino), " " ,
 				DevTag		 , "=" , dev , " " ,
 				NumberLinksTag , "=" , str(self.i_nlink), " " ,
-				FsNameTag		, "=" , MagicStartDelim , fsNameVar +MagicEndDelim]))
+				FsNameTag		, "=" , MagicStartDelim , fsNameVar +MagicEndDelim])
 		timeString = str(self.mtime)
 		bsize = str(DefaultBlockSize)
 		symlink_str = ""
@@ -1161,16 +1164,16 @@ class GmailInode(Dirtyable):
 			#BSizeTag + "=" + bsize			+ " " +
 			#SymlinkTag+"=" + LinkStartDelim  + symlink_str + LinkEndDelim +
 			#"")
-			body = (''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
-				ModeTag  , "=" , str(self.mode)   , " " ,
-				UidTag   , "=" , str(os.getuid()) , " " ,
-				GidTag   , "=" , str(os.getgid()) , " " ,
-				SizeTag  , "=" , str(self.size)   , " " ,
-				AtimeTag , "=" , timeString	  , " " ,
-				MtimeTag , "=" , timeString	  , " " ,
-				CtimeTag , "=" , timeString	  , " " ,
-				BSizeTag , "=" , bsize		  , " " ,
-				SymlinkTag,"=" , LinkStartDelim   , symlink_str , LinkEndDelim]))
+		body = ''.join([ # TODO - Is the tuple necessary to pass on str to mkmsg?
+			ModeTag  , "=" , str(self.mode)   , " " ,
+			UidTag   , "=" , str(os.getuid()) , " " ,
+			GidTag   , "=" , str(os.getgid()) , " " ,
+			SizeTag  , "=" , str(self.size)   , " " ,
+			AtimeTag , "=" , timeString	  , " " ,
+			MtimeTag , "=" , timeString	  , " " ,
+			CtimeTag , "=" , timeString	  , " " ,
+			BSizeTag , "=" , bsize		  , " " ,
+			SymlinkTag,"=" , LinkStartDelim   , symlink_str , LinkEndDelim])
 		return mkmsg(subject, body)
 
 #		SymlinkTag  + "=" + LinkStartDelim  + str + LinkEndDelim + " " +
@@ -1344,6 +1347,7 @@ class GmailBlock(Dirtyable):
 
 		self.block_size = inode.block_size
 		self.buffer = []
+		import threading
 		self.buffer_lock = threading.Semaphore(1)
 		#list(" "*self.block_size)
 		self.block_nr = block_nr
@@ -1551,6 +1555,7 @@ class Gmailfs(Fuse):
 		fsNameVar = DefaultFsname
 		password = DefaultPassword
 		username = DefaultUsername
+		import threading
 		if not imap: # imap == None:
 			# TODO - put this server in the conf file
 			imap = imaplib.IMAP4_SSL("imap.gmail.com", 993)
@@ -1584,7 +1589,7 @@ class Gmailfs(Fuse):
 		TODO - refactor this to smaller functions
 		"""
 		Fuse.__init__(self, *args, **kwargs)
-
+		import threading
 		self.nr_imap_threads = 4
 		self.imap_pool = Queue.Queue(self.nr_imap_threads)
 		for i in range(self.nr_imap_threads):
@@ -1717,7 +1722,7 @@ class Gmailfs(Fuse):
 			self.st_rdev = 0
 
 	#@+node:getattr
-	def getattr(self, path):
+	def getattr(self, path): # NOTE: not to be confoozled with __getattr__ or global getattr (reflection/introspection)
 		st = Gmailfs.GmailStat();
 		log_debug2("getattr('%s')" % (path))
 		#st_mode (protection bits)
@@ -1802,6 +1807,7 @@ class Gmailfs(Fuse):
 	#@+node:readdir
 	@logzilla
 	def readdir(self, path, offset):
+		import thread
 		log_entry("[%d] readdir('%s', %d)" % (thread.get_ident(), path, offset))
 		log_debug3("at top of readdir");
 		log_debug3("getting dir "+path)
@@ -1939,12 +1945,12 @@ class Gmailfs(Fuse):
 				#RefInodeTag + "=" + str				+ " " +
 			#FsNameTag   + "=" + MagicStartDelim + str + MagicEndDelim+ " " +
 		#VersionTag  + "=" + str)
-		subject =(''.join([DirentSubjectPrefix, " " ,
-		PathNameTag , "=" , PathStartDelim  , s , PathEndDelim , " " ,
-		FileNameTag , "=" , FileStartDelim  , s , FileEndDelim , " " ,
-		RefInodeTag , "=", s, " " ,
-		FsNameTag   , "=" , MagicStartDelim , s , MagicEndDelim, " " ,
-		VersionTag  , "=" , s]))
+		subject =''.join([DirentSubjectPrefix, " " ,
+			PathNameTag , "=" , PathStartDelim  , s , PathEndDelim , " " ,
+			FileNameTag , "=" , FileStartDelim  , s , FileEndDelim , " " ,
+			RefInodeTag , "=", s, " " ,
+			FsNameTag   , "=" , MagicStartDelim , s , MagicEndDelim, " " ,
+			VersionTag  , "=" , s])
 		return subject
 
 	def parse_dirent_msg(self, msg):
@@ -2577,6 +2583,7 @@ def main(mountpoint, namedOptions):
 	# TODO - use optparse or pyopt
 	log_debug1("Gmailfs: starting up, pid: %d" % (os.getpid()))
 	global lead_thread
+	import thread
 	lead_thread = thread.get_ident()
 	if am_lead_thread():
 		print "am lead thread"
