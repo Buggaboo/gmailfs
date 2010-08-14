@@ -65,6 +65,7 @@ GmailFS provides a filesystem using a Google Gmail account as its storage medium
 # TODO - reduce dependency on globals
 # TODO - add python version check, to prevent bad syntax
 # TODO - do a chmod 600 check on ~/.gmailfs.conf to prevent party password thieves from doing their work
+# TODO - mission: destroy all globals, the semaphores don't need to be globals
 
 import pprint
 
@@ -587,7 +588,7 @@ def GmailConfig(fname):
 do_writeout = 1
 #@+node:mythread
 class testthread(Thread):
-	@logzilla
+	#@logzilla
 	def __init__ (self, fs, nr):
 		Thread.__init__(self)
 		self.fs = fs
